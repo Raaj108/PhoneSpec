@@ -1,0 +1,29 @@
+{
+  "name": "phoneSpec",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Raaj108/PhoneSpec",
+  "authors": [
+    "Raaj108 <rajj108@outlook.com>"
+  ],
+  "description": "PhoneSpec is an angularJS single page aplication that displays the specifications of all the latest mobile phones.",
+  "main": "",
+  "keywords": [
+    "phonespec",
+    "new",
+    "mobile",
+    "phones"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "bootstrap": "3.3.x"
+  }
+}
