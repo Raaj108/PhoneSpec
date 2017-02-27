@@ -1,6 +1,7 @@
 {
   "name": "phonespec",
   "version": "0.0.0",
+  "private": true,
   "homepage": "https://github.com/Raaj108/PhoneSpec",
   "authors": [
     "Raaj108 <rajj108@outlook.com>"
