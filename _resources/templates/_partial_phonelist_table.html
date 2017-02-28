@@ -1,20 +1,19 @@
-<div>
-  <table>
+
+  <table class="table table-bordered table-striped table-hover">
     <thead>
-      <tr>
-        <th>Phone Model</th>
-        <th>Phone Snippet</th>
+      <tr class="row">
+        <th class="col-md-4 col-md-offset-2 text-center">Phone Model</th>
+        <th class="col-md-4 text-center col-md-offset-2">Phone Snippet</th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="phone in phones">
-        <td>
+      <tr ng-repeat="phone in phones" class="row">
+        <td class="col-md-4 col-md-offset-2">
           {{phone.name}}
         </td>
-        <td>
+        <td class="col-md-4 col-md-offset-2">
           {{phone.snippet}}
         </td>
       </tr>
     </tbody>
   </table>
-</div>
