@@ -1,0 +1,16 @@
+.table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 480px) {
+  .table {
+    width: 100%;
+  }
+  table th {
+    font-size: 12px;
+  }
+  table td {
+    font-size: 11px;
+  }
+}
