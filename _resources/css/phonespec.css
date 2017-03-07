@@ -12,10 +12,13 @@ img.thumbnail {
 }
 
 @media screen and (max-width: 480px) {
+  img.thumbnail {
+    width: 60px;
+  }
   table th {
     font-size: 12px;
   }
-  table td {
-    font-size: 11px;
+  table td p {
+    font-size: 10px;
   }
 }
