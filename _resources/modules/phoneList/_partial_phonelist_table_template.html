@@ -4,42 +4,28 @@
       <input type="text" ng-model="search.name" class="form-control" placeholder="Search Phone">
     </div>
     <div class="col-md-4">
-      Sort by:
-      <select ng-model="orderProp">
+      <select ng-model="orderProp" class="form-control">
         <option value="name">Alphabetical</option>
         <option value="release">Latest</option>
       </select>
     </div>
   </div>
 
-  <table class="table table-bordered table-striped table-hover">
-    <thead>
-      <tr>
-        <th class="col-md-1 text-center">Age</th> 
-        <th class="col-md-1 text-center">Thumb</th>
-        <th class="col-md-2 text-center">Phone Model</th>
-        <th class="col-md-3 text-center">Phone Id</th>
-        <th class="col-md-5 text-center">Phone Snippet</th>
-      </tr>
-    </thead>
+  <table class="table table-striped table-hover">
     <tbody>
       <tr ng-repeat="phone in phones | filter:search:strict">
-        <td class="col-md-1 ">
-          {{phone.age}}
-        </td>
-        <td class="col-md-1 ">
+        <td class="col-md-1">
           <a href="#/phones/{{phone.id}}" class="thumb">
-            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail"/>
+            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail" />
           </a>
         </td>
-        <td class="col-md-2 ">
-          {{phone.name}}
-        </td>
-        <td class="col-md-3 ">
-          {{phone.id}}
-        </td>
-        <td class="col-md-5">
-          {{phone.snippet}}
+        <td class="col-md-9">
+          <a href="#/phones/{{phone.id}}">{{phone.name}} </a>
+          <div>
+            <label>{{phone.id}}</label>
+          </div>
+          <p>AGE: {{phone.age}}</p>
+          <p>{{phone.snippet}}</p>
         </td>
       </tr>
     </tbody>
