@@ -5,18 +5,19 @@
     </div>
     <div class="col-md-4">
       Sort by:
-        <select ng-model="orderProp">
-          <option value="name">Alphabetical</option>
-          <option value="release">Latest</option>
-        </select>
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="release">Latest</option>
+      </select>
     </div>
   </div>
 
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
-        <th class="col-md-1 text-center">Age</th>
-        <th class="col-md-3 text-center">Phone Model</th>
+        <th class="col-md-1 text-center">Age</th> 
+        <th class="col-md-1 text-center">Thumb</th>
+        <th class="col-md-2 text-center">Phone Model</th>
         <th class="col-md-3 text-center">Phone Id</th>
         <th class="col-md-5 text-center">Phone Snippet</th>
       </tr>
@@ -26,7 +27,12 @@
         <td class="col-md-1 ">
           {{phone.age}}
         </td>
-        <td class="col-md-3 ">
+        <td class="col-md-1 ">
+          <a href="#/phones/{{phone.id}}" class="thumb">
+            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail"/>
+          </a>
+        </td>
+        <td class="col-md-2 ">
           {{phone.name}}
         </td>
         <td class="col-md-3 ">
@@ -37,5 +43,5 @@
         </td>
       </tr>
     </tbody>
-  </table> 
+  </table>
 </div>

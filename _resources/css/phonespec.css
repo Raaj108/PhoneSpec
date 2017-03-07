@@ -1,13 +1,17 @@
-body{
+body {
   padding-top: 50px;
 }
 
-.table {  
+.table {
   margin: 20px auto;
 }
 
+img.thumbnail {
+  width: 90px;
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 480px) {
-  
   table th {
     font-size: 12px;
   }
