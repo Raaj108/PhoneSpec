@@ -3,17 +3,25 @@
 
 <head>
   <meta charset="utf-8">
-  <title>My HTML File</title>
+  <title>Phone Specification Application</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
   <link rel="stylesheet" href="_resources/css/phonespec.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/angular/angular.js"></script>  
-  <script src="_resources/modules/app.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="_resources/app.js"></script>
+  <script src="_resources/app.config.js"></script>
+  <!--include phoneList module-->
   <script src="_resources/modules/phoneList/phone-list.module.js"></script>
   <script src="_resources/modules/phoneList/phone-list.directives.js"></script>
   <script src="_resources/modules/phoneList/phone-list.controller.js"></script>
+
+  <!--include phoneDetails module-->
+  <script src="_resources/modules/phoneDetails/phone-details.module.js"></script>
+  <script src="_resources/modules/phoneDetails/phone-details.directive.js"></script>
+  <script src="_resources/modules/phoneDetails/phone-details.controller.js"></script>
 
 </head>
 
@@ -21,9 +29,6 @@
   <div class="container">
     <Phone-list-directive phones="phones"></Phone-list-directive>
   </div>
-
-
-
 </body>
 
 </html>
