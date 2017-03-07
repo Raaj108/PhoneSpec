@@ -9,17 +9,21 @@
   <link rel="stylesheet" href="_resources/css/phonespec.css">
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="_resources/js/phone/phone.module.js"></script>
-  <script src="_resources/js/app.js"></script>
-  <script src="_resources/js/directives.js"></script>
+  <script src="bower_components/angular/angular.js"></script>  
+  <script src="_resources/modules/app.js"></script>
+  <script src="_resources/modules/phoneList/phone-list.module.js"></script>
+  <script src="_resources/modules/phoneList/phone-list.directives.js"></script>
+  <script src="_resources/modules/phoneList/phone-list.controller.js"></script>
 
 </head>
 
 <body>
   <div class="container">
-    <Phone-list-directive></Phone-list-directive>
+    <Phone-list-directive phones="phones"></Phone-list-directive>
   </div>
+
+
+
 </body>
 
 </html>

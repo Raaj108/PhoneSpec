@@ -1,12 +1,13 @@
-.table {
-  width: 80%;
+body{
+  padding-top: 50px;
+}
+
+.table {  
   margin: 20px auto;
 }
 
 @media screen and (max-width: 480px) {
-  .table {
-    width: 100%;
-  }
+  
   table th {
     font-size: 12px;
   }
