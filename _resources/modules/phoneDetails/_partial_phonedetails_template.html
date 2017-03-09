@@ -1,1 +1,41 @@
-<h1>Phone ID : {{phoneId}}</h1>
+<div>
+
+  <img ng-src="{{phone.images[0]}}" class="phone" />
+  <h1>{{phone.name}}</h1>
+  <p>{{phone.description}}</p>
+
+
+  <div ng-repeat="img in phone.images">
+    <div ng-if="$odd" class="row">
+      <div class="col-md-6">
+        <img ng-src="{{img}}" />
+      </div>
+      <div class="col-md-6">
+
+      </div>
+    </div>
+    <div ng-if="$even" class="row">
+      <div class="col-md-6">
+      </div>
+      <div class="col-md-6 text-right">
+        <img ng-src="{{img}}" />
+      </div>
+    </div> 
+  </div>
+
+
+  <ul class="specs">
+    <li>
+      <span>Availability and Networks</span>
+      <dl>
+        <dt>Availability</dt>
+        <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
+      </dl>
+    </li>
+
+    <li>
+      <span>Additional Features</span>
+      <dd>{{phone.additionalFeatures}}</dd>
+    </li>
+  </ul>
+</div>

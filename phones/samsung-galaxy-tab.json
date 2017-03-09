@@ -45,13 +45,13 @@
     }, 
     "id": "samsung-galaxy-tab", 
     "images": [
-        "img/phones/samsung-galaxy-tab.0.jpg", 
-        "img/phones/samsung-galaxy-tab.1.jpg", 
-        "img/phones/samsung-galaxy-tab.2.jpg", 
-        "img/phones/samsung-galaxy-tab.3.jpg", 
-        "img/phones/samsung-galaxy-tab.4.jpg", 
-        "img/phones/samsung-galaxy-tab.5.jpg", 
-        "img/phones/samsung-galaxy-tab.6.jpg"
+        "_resources/images/phones//samsung-galaxy-tab.0.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.1.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.2.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.3.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.4.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.5.jpg", 
+        "_resources/images/phones//samsung-galaxy-tab.6.jpg"
     ], 
     "name": "Samsung Galaxy Tab\u2122", 
     "sizeAndWeight": {

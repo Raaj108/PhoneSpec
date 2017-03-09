@@ -4,8 +4,8 @@ angular.module('phoneDetails').directive('phoneDetailsDirective', function () {
     templateUrl: './_resources/modules/phoneDetails/_partial_phonedetails_template.html',
     controller: 'PhoneDetailsController',
     replace: 'true',
-    scope:{
-      phoneId : '@phoneId'
+    scope: {
+      phone: '='
     }
   }
 });

@@ -2,6 +2,10 @@ body {
   padding-top: 50px;
 }
 
+ul{
+  list-style-type: none;
+}
+
 .table {
   margin: 20px auto;
 }
