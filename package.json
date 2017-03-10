@@ -16,13 +16,13 @@
     "protractor": "^4.0.9"
   },
   "dependencies": {
-    "bower": "^1.7.7"
-  },
+  "bower": "^1.5.2"
+},
   "scripts": {
     "postinstall": "bower install",
 
     "prestart": "npm install",
-    "start": "http-server -a http://phonespecapp.herokuapp.com -p -c-1",
+    "start": "http-server -a localhost -p 8000 -c-1",
 
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
