@@ -1,0 +1,80 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'owner',
+1 verbose cli   'ls',
+1 verbose cli   'phonespec' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 silly mapToRegistry name phonespec
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'phonespec',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'phonespec',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/phonespec
+9 verbose request uri https://registry.npmjs.org/phonespec
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 2:31:10 PM
+12 verbose request id 603410f86a42a9c3
+13 http request GET https://registry.npmjs.org/phonespec
+14 http 404 https://registry.npmjs.org/phonespec
+15 verbose headers { 'content-type': 'application/json',
+15 verbose headers   'cache-control': 'max-age=0',
+15 verbose headers   'content-length': '2',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Fri, 10 Mar 2017 22:31:11 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   age: '0',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-sjc3649-SJC',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1489185071.633066,VS0,VE181',
+15 verbose headers   vary: 'Accept-Encoding' }
+16 silly get cb [ 404,
+16 silly get   { 'content-type': 'application/json',
+16 silly get     'cache-control': 'max-age=0',
+16 silly get     'content-length': '2',
+16 silly get     'accept-ranges': 'bytes',
+16 silly get     date: 'Fri, 10 Mar 2017 22:31:11 GMT',
+16 silly get     via: '1.1 varnish',
+16 silly get     age: '0',
+16 silly get     connection: 'keep-alive',
+16 silly get     'x-served-by': 'cache-sjc3649-SJC',
+16 silly get     'x-cache': 'MISS',
+16 silly get     'x-cache-hits': '0',
+16 silly get     'x-timer': 'S1489185071.633066,VS0,VE181',
+16 silly get     vary: 'Accept-Encoding' } ]
+17 error owner ls Couldn't get owner data phonespec
+18 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/phonespec
+18 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+18 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+18 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+18 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+18 verbose stack     at emitTwo (events.js:87:13)
+18 verbose stack     at Request.emit (events.js:172:7)
+18 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+18 verbose stack     at emitOne (events.js:82:20)
+18 verbose stack     at Request.emit (events.js:169:7)
+18 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+19 verbose statusCode 404
+20 verbose pkgid phonespec
+21 verbose cwd C:\Users\rpatil\Desktop\Net Practice\Angular\PhoneSpec
+22 error Windows_NT 6.1.7601
+23 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "owner" "ls" "phonespec"
+24 error node v4.4.5
+25 error npm  v2.15.5
+26 error code E404
+27 error 404 Registry returned 404 for GET on https://registry.npmjs.org/phonespec
+27 error 404
+27 error 404 'phonespec' is not in the npm registry.
+27 error 404 You should bug the author to publish it (or use the name yourself!)
+27 error 404
+27 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 verbose exit [ 1, true ]
