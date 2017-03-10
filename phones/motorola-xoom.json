@@ -22,22 +22,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.1", 
         "cell": "CDMA 800 /1900 LTE 700, Rx diversity in all bands", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 a/b/g/n"
     }, 
     "description": "MOTOROLA XOOM has a super-powerful dual-core processor and Android\u2122 3.0 (Honeycomb) \u2014 the Android platform designed specifically for tablets. With its 10.1-inch HD widescreen display, you\u2019ll enjoy HD video in a thin, light, powerful and upgradeable tablet.", 
     "display": {
         "screenResolution": "WXGA (1200 x 800)", 
         "screenSize": "10.1 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "1 GHz Dual Core Tegra 2", 
-        "fmRadio": false, 
-        "physicalKeyboard": false, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "no", 
         "usb": "USB 2.0"
     }, 
     "id": "motorola-xoom", 

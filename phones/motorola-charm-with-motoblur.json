@@ -22,22 +22,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.0", 
         "cell": "WCDMA 1700/2100, GSM 850/900/1800/1900, HSDPA 3.6 Mbps (Category 5/6), EDGE Class 12, GPRS Class 12", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 b/g"
     }, 
     "description": "Motorola CHARM fits easily in your pocket or palm. Includes MOTOBLUR so you can sync and merge your contacts, emails, messages and posts with continuous updates and back-ups.", 
     "display": {
         "screenResolution": "QVGA (320 x 240)", 
         "screenSize": "2.8 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "600 MHz", 
-        "fmRadio": false, 
-        "physicalKeyboard": true, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "yes", 
         "usb": "USB 2.0"
     }, 
     "id": "motorola-charm-with-motoblur", 

@@ -22,22 +22,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.1", 
         "cell": "800/1900 CDMA EVDO Rev. A with dual diversity antenna, 850/900/1800/1900MHz GSM, GPRS Class 12, EDGE Class 12, 850/1900/2100 WCDMA (category 9/10), HSDPA 10.2mbps, HSUPA 1.8 mbps", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 b/g/n"
     }, 
     "description": "Access your work directory, email or calendar with DROID Pro by Motorola., an Android-for-business smartphone with corporate-level security. It features both a QWERTY keyboard and touchscreen, a speedy 1 GHz processor and Adobe\u00ae Flash\u00ae Player 10.", 
     "display": {
         "screenResolution": "HVGA (480 x 320)", 
         "screenSize": "3.1 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "1 GHz TI OMAP", 
-        "fmRadio": false, 
-        "physicalKeyboard": true, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "yes", 
         "usb": "USB 2.0"
     }, 
     "id": "droid-pro-by-motorola", 

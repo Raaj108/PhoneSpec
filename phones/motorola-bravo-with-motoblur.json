@@ -21,22 +21,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.1", 
         "cell": "WCDMA 850/1900, GSM 850/900/1800/1900, HSDPA 7.2 Mbps (Category 7/8), EDGE Class 12, GPRS Class 12, HSUPA 2.0 Mbps", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 b/g/n"
     }, 
     "description": "MOTOROLA BRAVO\u2122 with MOTOBLUR\u2122 with its large 3.7-inch touchscreen and web-browsing capabilities is sure to make an impression.  And it keeps your life updated and secure through MOTOBLUR.", 
     "display": {
         "screenResolution": "WVGA (800 x 480)", 
         "screenSize": "3.7 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "800 Mhz", 
-        "fmRadio": true, 
-        "physicalKeyboard": false, 
+        "fmRadio": "yes", 
+        "physicalKeyboard": "no", 
         "usb": "USB 2.0"
     }, 
     "id": "motorola-bravo-with-motoblur", 

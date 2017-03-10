@@ -22,22 +22,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.1", 
         "cell": "1.9 GHz CDMA PCS, 800 MHz CDMA, EVDO Rev. A, 1xRTT", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 b/g"
     }, 
     "description": "Android plus QWERTY is a powerful duo. LG Axis melds a speedy UI with the limitless micro-entertainment of 80,000+ apps including voice-activated Google. Feel the tactile vibration on its tempered glass touchscreen. Take the fuzziness out of your fun with a 3.2MP camera that does 360\u00b0 panoramics. And customize your home screens with shortcuts to your apps, favorites, and widgets. It's the centerpiece of your life.", 
     "display": {
         "screenResolution": "WVGA (800 x 480)", 
         "screenSize": "3.2 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "", 
         "cpu": "600 MHz Qualcomm MSM7627", 
-        "fmRadio": false, 
-        "physicalKeyboard": true, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "yes", 
         "usb": "USB 2.0"
     }, 
     "id": "lg-axis", 

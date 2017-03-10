@@ -21,22 +21,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 2.1", 
         "cell": "WCDMA 850/1900/2100, GSM 850/900/1800/1900, HSDPA 14Mbps (Category 10) Edge Class 12, GPRS Class 12, eCompass, AGPS", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 a/b/g/n"
     }, 
     "description": "MOTOROLA ATRIX 4G gives you dual-core processing power and the revolutionary webtop application. With webtop and a compatible Motorola docking station, sold separately, you can surf the Internet with a full Firefox browser, create and edit docs, or access multimedia on a large screen almost anywhere.", 
     "display": {
         "screenResolution": "QHD (960 x 540)", 
         "screenSize": "4.0 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "1 GHz Dual Core", 
-        "fmRadio": false, 
-        "physicalKeyboard": false, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "no", 
         "usb": "USB 2.0"
     }, 
     "id": "motorola-atrix-4g", 

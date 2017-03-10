@@ -1,41 +1,230 @@
 <div>
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img ng-src="{{phone.images[0]}}" alt="First Image">
+        <div class="carousel-caption">
 
-  <img ng-src="{{phone.images[0]}}" class="phone" />
-  <h1>{{phone.name}}</h1>
-  <p>{{phone.description}}</p>
-
-
-  <div ng-repeat="img in phone.images">
-    <div ng-if="$odd" class="row">
-      <div class="col-md-6">
-        <img ng-src="{{img}}" />
-      </div>
-      <div class="col-md-6">
-
+        </div>
       </div>
     </div>
-    <div ng-if="$even" class="row">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-6 text-right">
-        <img ng-src="{{img}}" />
-      </div>
-    </div> 
   </div>
 
 
-  <ul class="specs">
-    <li>
-      <span>Availability and Networks</span>
-      <dl>
-        <dt>Availability</dt>
-        <dd ng-repeat="availability in phone.availability">{{availability}}</dd>
-      </dl>
-    </li>
 
-    <li>
-      <span>Additional Features</span>
-      <dd>{{phone.additionalFeatures}}</dd>
-    </li>
-  </ul>
+  <table class="table imageSlider">
+    <tr>
+      <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$even">
+        <img class="sliderImage" ng-src="{{image}}">
+      </td>
+    </tr>
+    <tr>
+      <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$odd">
+        <img class="sliderImage" ng-src="{{image}}">
+      </td>
+    </tr>
+  </table>
+
+
+  <h1>{{phone.name}}</h1>
+  <p>{{phone.description}}</p>
+
+  <section class="specs">
+    <h3>Specifications : </h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#software">
+                OS/Software
+              </p>
+            </h4>
+            </div>
+            <div id="software" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.android">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#storage">
+                Storage
+              </p>
+            </h4>
+            </div>
+            <div id="storage" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.storage">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#camera">
+                Camera
+              </p>
+            </h4>
+            </div>
+            <div id="camera" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.camera">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#battery">
+                Battery
+              </p>
+            </h4>
+            </div>
+            <div id="battery" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.battery">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#display">
+                Display
+              </p>
+            </h4>
+            </div>
+            <div id="display" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.display">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#sizeAndWeight">
+                Size &amp; Weight 
+              </p>
+            </h4>
+            </div>
+            <div id="sizeAndWeight" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.sizeAndWeight">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#hardware">
+                Hardware
+              </p>
+            </h4>
+            </div>
+            <div id="hardware" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.hardware">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#connectivity">
+                Connectivity
+              </p>
+            </h4>
+            </div>
+            <div id="connectivity" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr ng-repeat="(key,value) in phone.connectivity">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-primary" id="panel1">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+              <p data-toggle="collapse" data-target="#additionalFeatures">
+                Additional Features
+              </p>
+            </h4>
+            </div>
+            <div id="additionalFeatures" class="panel-collapse collapse in">
+              <table class="table table-striped table-hover table-bordered">
+                <tr>
+                  <td class="text-left">{{phone.additionalFeatures}}</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>

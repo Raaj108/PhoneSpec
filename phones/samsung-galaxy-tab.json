@@ -25,22 +25,22 @@
     "connectivity": {
         "bluetooth": "Bluetooth 3.0", 
         "cell": "AT&T: GSM/EDGE : 850/900/1800/1900; 3G : 850/1900/2100\r\n\r\nSprint: CDMA : 850/1900MHz\r\n\r\nT-Mobile: GSM/EDGE : 850/900/1800/1900; 3G : 1700/1900\r\n\r\nVerizon: CDMA : 800MHz/1900MHz", 
-        "gps": true, 
-        "infrared": false, 
+        "gps": "yes", 
+        "infrared": "no", 
         "wifi": "802.11 b/g/n"
     }, 
     "description": "Feel Free to Tab\u2122. The Samsung Galaxy Tab\u2122, the tablet device that delivers enhanced capabilities with advanced mobility, has a large, perfectly sized, 7.0\" screen that offers plenty of room for the thousands of interactive games and apps available for the Android\u2122 platform, and its slim design makes it perfect for travel and one-handed grip. Use the Galaxy Tab to relax and enjoy an e-book, watch rich video or full web content with its Adobe\u00ae Flash\u00ae Player compatibility, video chat using the front-facing camera, or send user-generated content wirelessly to other devices like your TV via AllShare\u2122.  With so many options for customization and interactivity, the Galaxy Tab gives you everything you want, anywhere you go\u2026Feel Free to Tab\u2122.", 
     "display": {
         "screenResolution": "WSVGA (1024 x 600)", 
         "screenSize": "7.0 inches", 
-        "touchScreen": true
+        "touchScreen": "yes"
     }, 
     "hardware": {
-        "accelerometer": true, 
+        "accelerometer": "yes", 
         "audioJack": "3.5mm", 
         "cpu": "1GHz", 
-        "fmRadio": false, 
-        "physicalKeyboard": false, 
+        "fmRadio": "no", 
+        "physicalKeyboard": "no", 
         "usb": "USB 2.0"
     }, 
     "id": "samsung-galaxy-tab", 
