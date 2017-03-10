@@ -1,35 +1,36 @@
 <div>
+  <!--carousel-->
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img ng-src="{{phone.images[0]}}" alt="First Image">
+        <img ng-src="{{carouselImage}}" alt="First Image">
         <div class="carousel-caption">
-
         </div>
       </div>
     </div>
   </div>
 
 
-
+  <!--Image Slider-->
   <table class="table imageSlider">
     <tr>
       <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$even">
-        <img class="sliderImage" ng-src="{{image}}">
+        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(this)">
       </td>
     </tr>
     <tr>
       <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$odd">
-        <img class="sliderImage" ng-src="{{image}}">
+        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(this)">
       </td>
     </tr>
   </table>
 
-
+  <!--Phone Heading and desctiption-->
   <h1>{{phone.name}}</h1>
   <p>{{phone.description}}</p>
 
+  <!--Phone specifications-->
   <section class="specs">
     <h3>Specifications : </h3>
     <div class="row">
@@ -87,7 +88,11 @@
             </div>
             <div id="camera" class="panel-collapse collapse in">
               <table class="table table-striped table-hover table-bordered">
-                <tr ng-repeat="(key,value) in phone.camera">
+                <tr ng-repeat="(key,value) in phone.camera" ng-if="$first">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value[0]+', '+value[1]}}</td>
+                </tr>
+                <tr ng-repeat="(key,value) in phone.camera" ng-if="!$first">
                   <td>{{key}}</td>
                   <td class="text-center">{{value}}</td>
                 </tr>
@@ -152,7 +157,11 @@
             </div>
             <div id="sizeAndWeight" class="panel-collapse collapse in">
               <table class="table table-striped table-hover table-bordered">
-                <tr ng-repeat="(key,value) in phone.sizeAndWeight">
+                <tr ng-repeat="(key,value) in phone.sizeAndWeight" ng-if="$first">
+                  <td>{{key}}</td>
+                  <td class="text-center">{{value[0]+' X '+value[1]+' X '+value[2]}}</td>
+                </tr>
+                <tr ng-repeat="(key,value) in phone.sizeAndWeight" ng-if="!$first">
                   <td>{{key}}</td>
                   <td class="text-center">{{value}}</td>
                 </tr>

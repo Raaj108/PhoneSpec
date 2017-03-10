@@ -5,7 +5,8 @@ angular.module('phoneDetails').directive('phoneDetailsDirective', function () {
     controller: 'PhoneDetailsController',
     replace: 'true',
     scope: {
-      phone: '='
+      phone: '=',
+      carouselImage: '@'
     }
   }
 });
