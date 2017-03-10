@@ -16,12 +16,12 @@
   <table class="table imageSlider">
     <tr>
       <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$even">
-        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(this)">
+        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(image)">
       </td>
     </tr>
     <tr>
       <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$odd">
-        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(this)">
+        <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(image)">
       </td>
     </tr>
   </table>
@@ -186,7 +186,7 @@
               <table class="table table-striped table-hover table-bordered">
                 <tr ng-repeat="(key,value) in phone.hardware">
                   <td>{{key}}</td>
-                  <td class="text-center">{{value}}</td>
+                  <td class="text-center">{{value | checkmark}}</td>
                 </tr>
               </table>
             </div>
@@ -207,7 +207,7 @@
               <table class="table table-striped table-hover table-bordered">
                 <tr ng-repeat="(key,value) in phone.connectivity">
                   <td>{{key}}</td>
-                  <td class="text-center">{{value}}</td>
+                  <td class="text-center">{{value | checkmark}}</td>
                 </tr>
               </table>
             </div>
