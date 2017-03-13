@@ -13,7 +13,7 @@
 
   <table class="table table-striped table-hover">
     <tbody>
-      <tr ng-repeat="phone in phones | filter:search:strict">
+      <tr ng-repeat="phone in phones | filter:search:strict" class="phone-list-item">
         <td class="col-md-1">
           <a href="#/phones/{{phone.id}}" class="thumb">
             <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail" />
