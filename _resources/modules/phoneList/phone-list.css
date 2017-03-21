@@ -1,0 +1,20 @@
+.table {
+  margin: 20px auto;
+}
+
+img.thumbnail {
+  width: 90px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  img.thumbnail {
+    width: 60px;
+  }
+  table th {
+    font-size: 12px;
+  }
+  table td p {
+    font-size: 10px;
+  }
+}

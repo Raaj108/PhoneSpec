@@ -6,9 +6,10 @@
 
     </div>
     <div class="col-md-6">
-      <h1 class="text-center">Select the Brand</h1>
+      <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
+      <h1 class="text-center">All Mobile Phone Brands</h1>
       <ul>
-        <li ng-repeat="brand in brands">{{brand.brandName}}</li>
+        <li ng-repeat="brand in brands" class="col-md-3 text-center"><a href="#/phones">{{brand.brandName}}</a></li>
       </ul>
     </div>
     <div class="col-md-3"></div>

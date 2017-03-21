@@ -1,0 +1,14 @@
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/*Carousel*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  height: 240px;
+  margin: auto;
+}

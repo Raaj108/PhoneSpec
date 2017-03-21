@@ -6,32 +6,9 @@ body {
   border-radius: 0px;
 }
 
-.wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
+
 
 ul {
   list-style-type: none;
 }
 
-.table {
-  margin: 20px auto;
-}
-
-img.thumbnail {
-  width: 90px;
-  margin-bottom: 0px;
-}
-
-@media screen and (max-width: 480px) {
-  img.thumbnail {
-    width: 60px;
-  }
-  table th {
-    font-size: 12px;
-  }
-  table td p {
-    font-size: 10px;
-  }
-}
