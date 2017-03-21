@@ -1,5 +1,14 @@
 body {
-  padding-top: 50px;
+  font-family: sans-serif;
+}
+
+.navbar {
+  border-radius: 0px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
 }
 
 ul {

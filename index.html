@@ -31,6 +31,10 @@
   <script src="_resources/app.config.js"></script>
   <script src="_resources/app.animations.js"></script>
   <!--include phoneList module-->
+  <script src="_resources/modules/brandsList/brandsList.module.js"></script>
+  <script src="_resources/modules/brandsList/brandsList.directive.js"></script>
+  <script src="_resources/modules/brandsList/brandsList.controller.js"></script>
+  <!--include phoneList module-->
   <script src="_resources/modules/phoneList/phone-list.module.js"></script>
   <script src="_resources/modules/phoneList/phone-list.directives.js"></script>
   <script src="_resources/modules/phoneList/phone-list.controller.js"></script>
@@ -45,6 +49,7 @@
 </head>
 
 <body>
+  <ng-include src="'_resources/templates/_partial_navigation.html'"></ng-include>
   <div class="container .view-container">
     <div ng-view class=".view-frame"></div>
   </div>

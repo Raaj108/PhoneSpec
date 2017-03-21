@@ -1,3 +1,3 @@
-// Define the `phonecatApp` module
+// Define the `phoneList` module
 angular.module('phoneList', []);
 
