@@ -1,33 +1,40 @@
-<div class="">
-  <div class="row">
-    <div class="col-md-4">
-      <input type="text" ng-model="search.name" class="form-control" placeholder="Search Phone">
-    </div>
-    <div class="col-md-4">
-      <select ng-model="orderProp" class="form-control">
-        <option value="name">Alphabetical</option>
-        <option value="release">Latest</option>
-      </select>
-    </div>
+<div class="row">
+  <div class="col-md-3 col-xs-3">
+    <section id="whatsNew">
+      <h2>What's New</h2>
+    </section>
   </div>
+  <div class="col-md-9 col-xs-9">
+    <div class="row">
+      <div class="col-md-4 col-xs-4">
+        <input type="text" ng-model="search.name" class="form-control" placeholder="Search Phone">
+      </div>
+      <div class="col-md-4 col-xs-4">
+        <select ng-model="orderProp" class="form-control">
+          <option value="name">Alphabetical</option>
+          <option value="release">Latest</option>
+        </select>
+      </div>
+    </div>
 
-  <table class="table table-striped table-hover">
-    <tbody>
-      <tr ng-repeat="phone in phones | filter:search:strict" class="phone-list-item">
-        <td class="col-md-1">
-          <a href="#/phones/{{phone.id}}" class="thumb">
-            <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail" />
-          </a>
-        </td>
-        <td class="col-md-9">
-          <a href="#/phones/{{phone.id}}">{{phone.name}} </a>
-          <div>
-            <label>{{phone.id}}</label>
-          </div>
-          <p>AGE: {{phone.age}}</p>
-          <p>{{phone.snippet}}</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <table class="table table-striped table-hover">
+      <tbody>
+        <tr ng-repeat="phone in phones | filter:search:strict" class="phone-list-item">
+          <td class="col-md-1">
+            <a href="#/phones/{{phone.id}}" class="thumb">
+              <img ng-src="{{phone.imageUrl}}" alt="{{phone.name}}" class="thumbnail" />
+            </a>
+          </td>
+          <td class="col-md-9 col-xs-9">
+            <a href="#/phones/{{phone.id}}">{{phone.name}} </a>
+            <div>
+              <label>{{phone.id}}</label>
+            </div>
+            <p>AGE: {{phone.age}}</p>
+            <p>{{phone.snippet}}</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
