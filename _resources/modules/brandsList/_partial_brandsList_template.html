@@ -1,18 +1,14 @@
 <div class="wrapper">
-
-
+  <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
+  <h1 class="">All Mobile Phone Brands</h1>
   <div class="row">
-    <div class="col-md-3">
-
+    <div id="tools" class="form-group col-md-4">
+      <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
     </div>
-    <div class="col-md-6">
-      <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
-      <h1 class="text-center">All Mobile Phone Brands</h1>
-      <ul>
-        <li ng-repeat="brand in brands" class="col-md-3 text-center"><a href="#/phones">{{brand.brandName}}</a></li>
-      </ul>
-    </div>
-    <div class="col-md-3"></div>
   </div>
-
+  <ul>
+    <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 ">
+      <a href="#/phones">{{brand.brandName}}</a>
+    </li>
+  </ul>
 </div>
