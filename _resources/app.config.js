@@ -2,14 +2,14 @@ angular.module('phoneSpecApp').config(['$locationProvider', '$routeProvider', fu
   //$locationProvider.hashPrefix('!');
 
   $routeProvider
-    .when('/brands', {
+    .when('/brand', {
       template: '<brands-list-directive brands="brands"></brands-list-directive>'
     })
-    .when('/phones', {
+    .when('/brand/:brand/phone', {
       template: '<Phone-list-directive phones="phones"></Phone-list-directive>'
     })
-    .when('/phones/:phoneId', {
+    .when('/brand/:brand/phone/:phone', {
       template: '<Phone-details-directive phone="phone" carousel-image="carouselImage"></Phone-list-directive>'
     })
-    .otherwise('/brands');
+    .otherwise('/brand');
 }]);

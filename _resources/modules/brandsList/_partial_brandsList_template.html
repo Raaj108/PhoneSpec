@@ -21,10 +21,10 @@
       </div>
     </div>
     <ul class="brand-list">
-      <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-3">
-        <a href="#/phones">
+      <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-2">
+        <a href="#/brand/{{brand.brandName}}/phone">
           <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.jpg" alt="{{brands.brandName}}" class="brand-images">
-          <p> <b>{{brand.brandName}}</b></p>
+          <p class="text-center"> <b>{{brand.brandName}}</b></p>
         </a>
       </li>
     </ul>

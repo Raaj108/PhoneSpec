@@ -22,6 +22,14 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
     $log.info(key);
   })
 
+  //carousel
+  setTimeout(function () {
+    angular.element('#phoneCarousel').carousel({
+      interval: 2000,
+      cycle: true
+    })
+  }, 100);
+
   //get all the brands using restful api
   $http({
     method: 'GET',
@@ -34,11 +42,7 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
     $log.error(response);
   });
 
-  setTimeout(function () {
-    angular.element('#phoneCarousel').carousel({
-      interval: 2000,
-      cycle: true
-    })
-  }, 100);
+
+
 
 }]);
