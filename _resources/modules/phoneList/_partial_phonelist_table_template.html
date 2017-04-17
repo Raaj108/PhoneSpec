@@ -1,11 +1,20 @@
 <div class="row">
   <div class="col-md-3 col-xs-3">
+    <section id="selectBrand">
+      <ul class="brand-list">
+        <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-3">
+          <a href="#/brand/{{brand.brandName}}/phone">
+            <b>{{brand.brandName}}</b>
+          </a>
+        </li>
+      </ul>
+    </section>
     <section id="whatsNew">
       <h2>What's New</h2>
     </section>
   </div>
   <div class="col-md-9 col-xs-9" id="wrapper">
-    <div class="row" >
+    <div class="row">
       <div class="col-md-4 col-xs-4">
         <input type="text" ng-model="search.name" class="form-control" placeholder="Search Phone">
       </div>
@@ -19,9 +28,9 @@
 
     <ul class="phone-list">
       <li ng-repeat="phone in phones | filter:search:strict" class="col-md-3 col-sm-3 phone-list-item">
-        <a href="#/brand/{{brand.brandName}}/phone/{{phone}}">
+        <a href="#/brand/{{brandName}}/phone/{{phone}}">
           <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.jpg" alt="{{phone}}" class="phone-images">
-          <p> <b>{{phone}}</b></p>
+          <p><b>{{phone}}</b></p>
         </a>
       </li>
     </ul>

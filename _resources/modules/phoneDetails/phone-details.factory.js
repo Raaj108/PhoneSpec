@@ -1,18 +1,21 @@
-angular.module('phoneList')
-  .factory('phoneListfactory', ['$http', '$q', function ($http, $q) {
+angular.module('phoneDetails')
+  .factory('phoneDetailsfactory', ['$http', '$q', function ($http, $q) {
 
     var service = {};
     var baseUrl = 'http://phonespec-api.herokuapp.com/api/brand/'
     var _brand;
+    var _phone;
     var _url;
 
     var generateURL = function () {
-      _url = baseUrl + _brand + '/phone';
+      _url = baseUrl + _brand + '/phone/' + _phone;
       return _url;
     }
 
-    service.getPhonesWithBrand = function (brand) {
-      _brand = brand;     
+    service.getPhone = function (brand, phone) {
+      _brand = brand;
+      _phone = phone;
+
       generateURL();
       var deferred = $q.defer();
       $http({
