@@ -1,4 +1,4 @@
-angular.module('brandsList').controller('brandsListController', ['$scope', '$http', '$log', function ($scope, $http, $log) {
+angular.module('brandsList').controller('brandsListController', ['$scope', '$http', '$log', 'brandListfactory', function ($scope, $http, $log, brandListfactory) {
   $scope.brands = [];
   $scope.cards = {
     'samsung': {
@@ -22,18 +22,7 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
     $log.info(key);
   })
 
-  //get all the brands using restful api
-  $http({
-    method: 'GET',
-    url: 'http://phonespec-api.herokuapp.com/api/brand'
-  }).then(function successCallback(response) {
-    angular.forEach(response.data, function (value, key) {
-      $scope.brands.push(value); // populate brands array
-    })
-  }, function errorCallback(response) {
-    $log.error(response);
-  });
-
+  //carousel
   setTimeout(function () {
     angular.element('#phoneCarousel').carousel({
       interval: 2000,
@@ -41,4 +30,15 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
     })
   }, 100);
 
+  $scope.getAllBrands = function () {
+    brandListfactory.getBrands()
+      .then(function successCallback(response) {
+        angular.forEach(response.data, function (value, key) {
+          $scope.brands.push(value); // populate brands array
+        })
+      }, function errorCallback(response) {
+        $log.error(response);
+      });
+  }
+  $scope.getAllBrands();
 }]);

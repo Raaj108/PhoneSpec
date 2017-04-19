@@ -6,8 +6,8 @@
 
 /*Carousel*/
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
   height: 240px;
   margin: auto;
 }
@@ -40,13 +40,18 @@
   padding: 2px 16px;
 }
 
+ul.brand-list {
+  padding-left: 0;
+}
+
 .brand-images {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 480px) {
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
+  .carousel-inner>.item>img,
+  .carousel-inner>.item>a>img {
     height: 160px;
   }
   .card {

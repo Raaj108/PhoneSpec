@@ -5,7 +5,8 @@ angular.module('phoneList').directive('phoneListDirective', function () {
     controller: 'PhoneListController',
     replace: 'true',
     scope: {
-      phones: '='
+      phones: '=',
+      brands: '='
     }
   }
 });

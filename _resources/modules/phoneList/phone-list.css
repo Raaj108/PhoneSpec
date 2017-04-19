@@ -7,14 +7,20 @@ img.thumbnail {
   margin-bottom: 0px;
 }
 
+#wrapper {
+  margin-top: 25px;
+}
+
+ul.phone-list {
+  padding-top: 20px;
+  padding-left: 0;
+}
+
 @media screen and (max-width: 480px) {
   img.thumbnail {
     width: 60px;
   }
-  table th {
-    font-size: 12px;
-  }
-  table td p {
-    font-size: 10px;
+  #wrapper {
+    margin-top: 10px;
   }
 }
