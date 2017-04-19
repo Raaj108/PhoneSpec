@@ -5,7 +5,7 @@ angular.module('phoneSpecApp').config(['$locationProvider', '$routeProvider', fu
     .when('/brands', {
       template: '<brands-list-directive brands="brands"></brands-list-directive>'
     })
-    .when('/phones', {
+    .when('/:brandName/phones', {
       template: '<Phone-list-directive phones="phones"></Phone-list-directive>'
     })
     .when('/phones/:phoneId', {
