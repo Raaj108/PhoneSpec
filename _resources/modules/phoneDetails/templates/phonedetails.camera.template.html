@@ -1,25 +1,25 @@
 <section class="display">
-  <div class="spec-heading">
-    <h4>Camera</h4>
-  </div>
-  <div class="spec-body">
-    <table class="table">
-      <tr ng-repeat="(key, value) in phone.data.camera">
-        <td class="col-lg-1 col-md-1 col-sm-1">
-          {{key}}
-        </td>
-        <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_object(value) == false">
-          {{value}}
-        </td>
-        <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_object(value)">
-          <table>
-            <tr ng-repeat="(key2, value2) in value">
-              <td>{{key2}}</td>
-              <td>{{value2}}</td>
+    <div class="spec-heading">
+        <h4>Camera</h4> </div>
+    <div class="spec-body">
+        <table class="table">
+            <tr ng-repeat="(key, value) in phone.data.camera">
+                <td class="col-lg-1 col-md-1 col-sm-1"> {{key}} </td>
+                <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_array(value) == false"> {{value}} </td>
+                <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_array(value)">
+                    <ul>
+                        <li ng-repeat="(key2, value2) in value" ng-if="is_object(value2)  == false">{{value2}} {{$last ? '' : ''}} </li>
+                        <li ng-repeat="(key2, value2) in value" ng-if="is_object(value2)">
+                            <table>
+                                <tr ng-repeat="(key3, value3) in value2">
+                                    <td class="col-lg-1 col-md-1 col-sm-1">{{key3}}</td>
+                                    <td class="col-lg-1 col-md-1 col-sm-1">{{value3}}</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </td>
             </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </div>
+        </table>
+    </div>
 </section>

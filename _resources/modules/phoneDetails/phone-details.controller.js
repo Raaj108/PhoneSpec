@@ -1,28 +1,28 @@
 angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '$log', '$routeParams', '$http', 'phoneDetailsfactory', function ($scope, $log, $routeParams, $http, phoneDetailsfactory) {
-  var phoneName = $routeParams.phone;
-  var brandName = $routeParams.brand;
-  $scope.phone = {};
-  /**
-    $http.get('phones/' + $scope.phoneId + '.json').then(function (response) {
+    var phoneName = $routeParams.phone;
+    var brandName = $routeParams.brand;
+    $scope.phone = {};
+    /**
+      $http.get('phones/' + $scope.phoneId + '.json').then(function (response) {
 
-      $scope.imageSwap($scope.phone.images[0]);
-    });**/
-
-
-
-  $scope.imageSwap = function (imageURL) {
-    $scope.carouselImage = imageURL;
-  }
-
-  $scope.getPhone = (function (brand, phone) {
-    phoneDetailsfactory.getPhone(brand, phone).
-    then(function successCallback(response) {
-      $scope.phone.data = response.data[0];
-    }, function errorCallback(response) {
-      $log.error(response);
-    });
-  })(brandName, phoneName);
-  $log.info($scope.phone);
-
-
+        $scope.imageSwap($scope.phone.images[0]);
+      });**/
+    $scope.imageSwap = function (imageURL) {
+        $scope.carouselImage = imageURL;
+    }
+    $scope.getPhone = (function (brand, phone) {
+        phoneDetailsfactory.getPhone(brand, phone).
+        then(function successCallback(response) {
+            $scope.phone.data = response.data[0];
+        }, function errorCallback(response) {
+            $log.error(response);
+        });
+    })(brandName, phoneName);
+    $log.info($scope.phone);
+    $scope.is_array = function (input) {
+        return angular.isArray(input) ? true : false;
+    }
+    $scope.is_object = function (input) {
+        return angular.isObject(input) ? true : false;
+    }
 }]);
