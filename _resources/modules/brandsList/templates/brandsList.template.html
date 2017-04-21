@@ -1,5 +1,4 @@
 <div class="wrapper row">
-
   <div class="col-md-3 col-sm-3 ">
     <section id="whatsNew">
       <h2 class="text-center">What's New</h2>
@@ -20,8 +19,8 @@
         <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
       </div>
     </div>
-    <ul class="brand-list">
-      <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-2">
+    <ul class="brand-list list-group row">
+      <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-3">
         <a href="#/brand/{{brand.brandName}}/phone">
           <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.jpg" alt="{{brands.brandName}}" class="brand-images">
           <p class="text-center"> <b>{{brand.brandName}}</b></p>
