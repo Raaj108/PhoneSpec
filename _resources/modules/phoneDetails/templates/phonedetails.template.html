@@ -1,0 +1,65 @@
+<div class="wrapper">
+
+
+  <div class="col-md-3 col-sm-3 ">
+    <section id="whatsNew">
+      <h2 class="text-center">What's New</h2>
+      <div class="card" ng-repeat="card in cards">
+        <img src="{{card.img}}" alt="Avatar">
+        <div class="card-container">
+          <h4><b>{{card.name}}</b></h4>
+          <p>{{card.description}}</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="col-md-9 col-sm-9 ">
+    <!--carousel-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="/_resources/images/phones/galaxy%20s8.jpg" alt="First Image">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Image Slider-->
+    <table class="table imageSlider">
+      <tr>
+        <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$even">
+          <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(image)">
+        </td>
+      </tr>
+      <tr>
+        <td class="col-md-1 text-center" ng-repeat="image in phone.images" ng-if="$odd">
+          <img class="sliderImage" ng-src="{{image}}" ng-click="imageSwap(image)">
+        </td>
+      </tr>
+    </table>
+
+    <!--Phone Heading and desctiption-->
+    <h1>{{phone.data.phoneName}}</h1>
+    <!--Phone specifications-->
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.display.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.design.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phonedetails.camera.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.battery.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.hardware.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.multimedia.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.connectivity.template.html'"></ng-include>
+    <hr>
+    <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.network.template.html'"></ng-include>
+    <hr>
+  </div>
+</div>

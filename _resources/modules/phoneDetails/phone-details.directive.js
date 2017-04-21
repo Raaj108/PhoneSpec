@@ -1,7 +1,7 @@
 angular.module('phoneDetails').directive('phoneDetailsDirective', function () {
   return {
     restrict: 'EA',
-    templateUrl: './_resources/modules/phoneDetails/_partial_phonedetails_template.html',
+    templateUrl: './_resources/modules/phoneDetails/templates/phonedetails.template.html',
     controller: 'PhoneDetailsController',
     replace: 'true',
     scope: {

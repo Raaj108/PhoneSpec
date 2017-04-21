@@ -1,7 +1,7 @@
 angular.module('phoneList').directive('phoneListDirective', function () {
   return {
     restrict: 'EA',
-    templateUrl: './_resources/modules/phoneList/_partial_phonelist_table_template.html',
+    templateUrl: './_resources/modules/phoneList/templates/phonelist.table.template.html',
     controller: 'PhoneListController',
     replace: 'true',
     scope: {
