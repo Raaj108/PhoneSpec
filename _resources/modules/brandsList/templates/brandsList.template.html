@@ -1,9 +1,9 @@
 <div class="wrapper row">
+
   <div class="col-md-3 col-sm-3 ">
     <section id="whatsNew">
       <h2 class="text-center">What's New</h2>
-      <div class="card" ng-repeat="card in cards">
-        <img src="{{card.img}}" alt="Avatar">
+      <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
         <div class="card-container">
           <h4><b>{{card.name}}</b></h4>
           <p>{{card.description}}</p>
@@ -16,9 +16,9 @@
     <h1 class="">All Mobile Phone Brands</h1>
     <div class="row">
       <div id="tools" class="form-group col-md-4">
-        <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
-      </div>
+        <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand"> </div>
     </div>
+
     <ul class="brand-list list-group row">
       <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-3">
         <a href="#/brand/{{brand.brandName}}/phone">
@@ -28,5 +28,4 @@
       </li>
     </ul>
   </div>
-
 </div>

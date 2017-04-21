@@ -1,4 +1,5 @@
 // Define the `PhoneListController` controller on the `phonecatApp` module
+
 angular.module('phoneList').controller('PhoneListController', ['$scope', '$log', '$routeParams', 'phoneListfactory', 'brandListfactory', function ($scope, $log, $routeParams, phoneListfactory, brandListfactory) {
 
   var brandName = $routeParams.brand;
@@ -34,3 +35,4 @@ angular.module('phoneList').controller('PhoneListController', ['$scope', '$log',
   }
   $scope.getPhoneWithBrand(brandName);
 }]);
+

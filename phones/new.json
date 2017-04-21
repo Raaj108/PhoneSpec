@@ -1,0 +1,127 @@
+{
+    "additionalFeatures": "Swype"
+    , "platform": {
+        "os": "Android 2.1"
+        , "ui": "TouchWiz"
+    }
+    , "availability": [
+        "Cellular South"
+    ]
+    , "battery": {
+        "standbyTime": "28 hours"
+        , "talkTime": "28 hours"
+        , "type": "Galaxy S7: 3000 mAh"
+        , "musicPlayTime": "Up to 55 hours"
+        , "videoPlayTime": "Up to 16 hours"
+        , "internetUseTime": {
+            "3G": "Up to 11 hours"
+            , "LTE": "Upto 13 hours"
+            , "Wi-Fi": "Upto 14 hosssurs"
+        }
+    }
+    , "body": {
+        "dimensions": [
+            " 2.74”(w)"
+            , "5.61” (h)"
+            , "0.31” (d)"
+        ]
+        , "weight": "152g"
+    }
+    , "brandName": "Samsung"
+    , "camera": {
+        "features": [
+            "Flash", "Optical Zoom"
+        ]
+        , "rear": {
+            "pixels": "12.0 MP"
+            , "type": "Dual"
+        }
+        , "front": {
+            "pixels": "5.0 MP"
+            , "type": "CMOS"
+        }
+        , "Video": {
+            "resolution": ""
+            , "type": "UHD 4K"
+            , "fps": "30fps"
+        }
+        , features: {
+            "flashLight": "yes"
+            , "autoFocus": "yes"
+        }
+    }
+    , "connectivity": {
+        "bluetooth": "Bluetooth 4.2"
+        , "bluetoothProfiles": "A2DP, AVRCP, DI, HFP, HID, HOGP, HSP, MAP,OPP, PAN, PBAP"
+        , "network": ["2G GSM: GSM850,GSM900, DCS1800, PCS1900", "3G UMTS: B1(2100), B2(1900), B4(AWS), B5(850)", "3G TD-SCDMA: B34(2010), B39(1880)", "4G FDD LTE: B1(2100), B2(1900), B3(1800), B4(AWS), B5(850), B7(2600), B8(900), B12(700), B18(800), B19(800), B20(800),B29(700), B30(2300)", "4G TDD LTE: B38(2600), B39(1900), B40(2300), B41(2500)"]
+        , "gps": "yes"
+        , "glonass": "yes"
+        , "infrared": "no"
+        , "nfc": "yes"
+        , "usb": "USB 2.0"
+        , "wifi": "802.11 a/b/g/n/ac 2.4G+5GHzVHT80 MU-MIMO"
+        , "wifiDirect": "yes"
+        , "simSize": "Nano"
+        , "PCSync": "Smart Switch™ (PC version)"
+    }
+    , "description": "Experience entertainment in a whole new light. The stylish and slim Samsung Showcase\u2122, with its vivid 4-inch Super AMOLED\u2122 display, makes everything from Hollywood blockbusters to music videos to Amazon\u2019s bestsellers look absolutely brilliant \u2013 even outside in the sun. Android\u2122 Market rockets you into a universe filled with equally brilliant apps; download them at blistering speeds thanks to the powerful 1GHz Hummingbird processor. Keep your social life organized and continuously updated with the pre-loaded social networking apps, while uploading all the 5.0MP pics you\u2019ve snapped and 720p HD videos you\u2019ve recorded"
+    , "display": {
+        "type": "Dual edge Super AMOLED®"
+        , "screenResolution": "2560 x 1440 (Quad HD)"
+        , "screenSize": "5.1” (129.2mm)"
+        , "touchType": "yes"
+        , "colorDepth": "16M"
+    }
+    , "hardware": {
+        "accelerometer": "yes"
+        , "audioJack": "3.5mm"
+        , "cpu": "1 GHz"
+        , "fmRadio": "no"
+        , "physicalKeyboard": "no"
+        , "usb": "USB 2.0"
+    }
+    , "id": "samsung--galaxy-s-7"
+    , "images": [
+        "_resources/images/phones//samsung-showcase-a-galaxy-s-phone.0.jpg"
+        , "_resources/images/phones//samsung-showcase-a-galaxy-s-phone.1.jpg"
+        , "_resources/images/phones//samsung-showcase-a-galaxy-s-phone.2.jpg"
+    ]
+    , "memory": {
+        "storage": {
+            "internal": "32GB"
+            , "expandable": {
+                "type": "MicroSD "
+                , "size": "2048MB"
+            }
+        }
+        , "ram": "512MB"
+    }
+    , "modelName": "Samsung Galaxy S7"
+    , "price": ""
+    , "processor": {
+        "chipset": "Quad-Core"
+        , "cpu": "2.15GHz"
+        , "gpu": "1.6GHz"
+    }
+    , "releaseDate": ""
+    , "reviews": []
+    , "sensors": {
+        "accelerometer": ""
+        , "airHumiditySensor": ""
+        , "barometer ": ""
+        , "detecting harmful radiation": ""
+        , "fingerprint sensors": ""
+        , "gyroscope ": ""
+        , "heart rate monitor": ""
+        , "light sensor": ""
+        , "magnetometer": ""
+        , "pedometer ": ""
+        , "proximitySensor": ""
+        , "thermometer ": ""
+    }
+    , "audio": ["MP3", "M4A", "3GA", "AAC", "OGG", "OGA", "WAV", "WMA", "AMR", "AWB", "FLAC", "MID", "MIDI", "XMF", "MXMF", "IMY", "RTTTL", "RTX", "OTA"],
+    "video":{
+        
+    }
+    , "type": "Galaxy S"
+}
