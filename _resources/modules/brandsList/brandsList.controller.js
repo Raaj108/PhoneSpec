@@ -20,15 +20,15 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
 
   angular.forEach($scope.cards, function (value, key) {
     $log.info(key);
-  })
-
+  });
+  
   //carousel
   setTimeout(function () {
     angular.element('#phoneCarousel').carousel({
       interval: 2000,
       cycle: true
     })
-  }, 100);
+  }, 100); 
 
   $scope.getAllBrands = function () {
     brandListfactory.getBrands()

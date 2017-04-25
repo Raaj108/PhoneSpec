@@ -1,6 +1,5 @@
-<div class="wrapper row">
-
-  <div class="col-md-3 col-sm-3 ">
+<div class="wrapper row" id="brandList-wrapper">
+  <div class="col-lg-2  col-md-2 col-sm-2" id="blog-list">
     <section id="whatsNew">
       <h2 class="text-center">What's New</h2>
       <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
@@ -11,21 +10,35 @@
       </div>
     </section>
   </div>
-  <div class="col-md-9 col-sm-9 ">
+
+  <div class="col-lg-7 col-md-7 col-sm-7" id="brand-list">
     <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
     <h1 class="">All Mobile Phone Brands</h1>
     <div class="row">
       <div id="tools" class="form-group col-md-4">
-        <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand"> </div>
+        <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
+      </div>
     </div>
 
-    <ul class="brand-list list-group row">
-      <li ng-repeat="brand in brands | filter:search.brand:strict" class="col-md-3 col-sm-3">
+    <div ng-repeat="brand in brands | filter:search.brand:strict" ng-class="{'row':($index+1) % 4 == 0}">
+      <div class="col-lg-3 col-md-3 col-sm-3 brand-list text-center">
         <a href="#/brand/{{brand.brandName}}/phone">
-          <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.jpg" alt="{{brands.brandName}}" class="brand-images">
-          <p class="text-center"> <b>{{brand.brandName}}</b></p>
+          <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.png" alt="{{brands.brandName}}" class="brand-images">
+          <p class> <b>{{brand.brandName}}</b></p>
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3  col-md-3 col-sm-3" id="blog-list">
+    <section id="whatsNew">
+      <h2 class="text-center">What's New</h2>
+      <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
+        <div class="card-container">
+          <h4><b>{{card.name}}</b></h4>
+          <p>{{card.description}}</p>
+        </div>
+      </div>
+    </section>
   </div>
 </div>
