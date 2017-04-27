@@ -18,17 +18,35 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
     }
   };
 
+  $scope.popularPhones = [{
+    brandName: 'Samsung',
+    phoneName: 'Galaxy S8'
+    }, {
+    brandName: 'Samsung',
+    phoneName: 'Galaxy S7'
+    }, {
+    brandName: 'Apple',
+    phoneName: '7S'
+  }, {
+    brandName: 'Motorola',
+    phoneName: 'Moto G5'
+  }, {
+    brandName: 'Xiaomi',
+    phoneName: 'Redmi 4'
+  }];
+  $scope.popularBrands = ['Samsung', 'Apple', 'Oppo', 'Xiaomi', 'Motorola', 'LG', 'Oneplus', 'Gionee', 'Sony'];
+
   angular.forEach($scope.cards, function (value, key) {
     $log.info(key);
   });
-  
+
   //carousel
   setTimeout(function () {
     angular.element('#phoneCarousel').carousel({
       interval: 2000,
       cycle: true
     })
-  }, 100); 
+  }, 100);
 
   $scope.getAllBrands = function () {
     brandListfactory.getBrands()
@@ -37,7 +55,7 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
           $scope.brands.push(value); // populate brands array
         })
       }, function errorCallback(response) {
-        $log.error(response);
+        //$log.error(response);
       });
   }
   $scope.getAllBrands();

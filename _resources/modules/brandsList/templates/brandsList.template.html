@@ -1,17 +1,6 @@
 <div class="wrapper row" id="brandList-wrapper">
-  <div class="col-lg-2  col-md-2 col-sm-2" id="blog-list">
-    <section id="whatsNew">
-      <h2 class="text-center">What's New</h2>
-      <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
-        <div class="card-container">
-          <h4><b>{{card.name}}</b></h4>
-          <p>{{card.description}}</p>
-        </div>
-      </div>
-    </section>
-  </div>
 
-  <div class="col-lg-7 col-md-7 col-sm-7" id="brand-list">
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" id="brand-list">
     <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
     <h1 class="">All Mobile Phone Brands</h1>
     <div class="row">
@@ -21,7 +10,7 @@
     </div>
 
     <div ng-repeat="brand in brands | filter:search.brand:strict" ng-class="{'row':($index+1) % 4 == 0}">
-      <div class="col-lg-3 col-md-3 col-sm-3 brand-list text-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 brand-list text-center">
         <a href="#/brand/{{brand.brandName}}/phone">
           <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.png" alt="{{brands.brandName}}" class="brand-images">
           <p class> <b>{{brand.brandName}}</b></p>
@@ -30,9 +19,61 @@
     </div>
   </div>
 
-  <div class="col-lg-3  col-md-3 col-sm-3" id="blog-list">
-    <section id="whatsNew">
-      <h2 class="text-center">What's New</h2>
+  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="blog-list">
+    <!---->
+    <section id="sideBar-nav">
+      <ul class="nav nav-stacked">
+        <li>
+          <table class="table table-hover table-bordered table-collapsible">
+            <thead>
+              <tr>
+                <th>
+                  Popular Phones
+                </th>
+              </tr>
+            </thead>
+            <tbody id="popularPhones">
+              <tr ng-repeat="popularPhone in popularPhones">
+                <td>
+                  <a href="#/brand/{{popularPhone.brandName}}/phone/{{popularPhone.phoneName}}">{{popularPhone.phoneName}}</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+        <li>
+          <table class="table table-hover table-bordered table-collapsible">
+            <thead>
+              <tr>
+                <th>
+                  Popular Brands
+                </th>
+              </tr>
+            </thead>
+            <tbody id="popularBrands">
+              <tr ng-repeat="popularBrand in popularBrands">
+                <td>
+                  <a href="#/brand/{{popularBrand}}/phone">{{popularBrand}}</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+      </ul>
+    </section>
+
+    <section id="ads">
+      <h2 class="text-center">Ads Here</h2>
+      <div class="card" ng-repeat="card in cards" ng-if="$odd"> <img src="{{card.img}}" alt="Avatar">
+        <div class="card-container">
+          <h4><b>Add</b></h4>
+          <p>{{card.description}}</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2 class="text-center">Reviews</h2>
       <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
         <div class="card-container">
           <h4><b>{{card.name}}</b></h4>
