@@ -1,10 +1,9 @@
 <div class="wrapper row" id="brandList-wrapper">
-
+  <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
   <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" id="brand-list">
-    <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
     <h1 class="">All Mobile Phone Brands</h1>
     <div class="row">
-      <div id="tools" class="form-group col-md-4">
+      <div id="tools" class="form-group col-md-6">
         <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
       </div>
     </div>
@@ -20,66 +19,9 @@
   </div>
 
   <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="blog-list">
-    <!---->
-    <section id="sideBar-nav">
-      <ul class="nav nav-stacked">
-        <li>
-          <table class="table table-hover table-bordered table-collapsible">
-            <thead>
-              <tr>
-                <th>
-                  Popular Phones
-                </th>
-              </tr>
-            </thead>
-            <tbody id="popularPhones">
-              <tr ng-repeat="popularPhone in popularPhones">
-                <td>
-                  <a href="#/brand/{{popularPhone.brandName}}/phone/{{popularPhone.phoneName}}">{{popularPhone.phoneName}}</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-        <li>
-          <table class="table table-hover table-bordered table-collapsible">
-            <thead>
-              <tr>
-                <th>
-                  Popular Brands
-                </th>
-              </tr>
-            </thead>
-            <tbody id="popularBrands">
-              <tr ng-repeat="popularBrand in popularBrands">
-                <td>
-                  <a href="#/brand/{{popularBrand}}/phone">{{popularBrand}}</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
-      </ul>
-    </section>
+    <ng-include src="'_resources/modules/brandsList/templates/brandList.sidebarNav.template.html'"></ng-include>
+    <ng-include src="'_resources/modules/brandsList/templates/brandList.ads.template.html'"></ng-include>
+    <ng-include src="'_resources/templates/_partial_displayReviews.html'"></ng-include>
 
-    <section id="ads">
-      <h2 class="text-center">Ads Here</h2>
-      <div class="card" ng-repeat="card in cards" ng-if="$odd"> <img src="{{card.img}}" alt="Avatar">
-        <div class="card-container">
-          <h4><b>Add</b></h4>
-          <p>{{card.description}}</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews">
-      <h2 class="text-center">Reviews</h2>
-      <div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
-        <div class="card-container">
-          <h4><b>{{card.name}}</b></h4>
-          <p>{{card.description}}</p>
-        </div>
-      </div>
-    </section>
   </div>
 </div>
