@@ -1,0 +1,10 @@
+<section id="reviews" class="row">
+  <h2 class="text-center">Reviews</h2>
+  <div class="card" ng-repeat="card in cards" class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+    <img src="{{card.img}}" alt="Avatar">
+    <div class="card-container">
+      <h4><b>{{card.name}}</b></h4>
+      <p>{{card.description}}</p>
+    </div>
+  </div>
+</section>
