@@ -1,0 +1,9 @@
+<section id="ads">
+  <h2 class="text-center">Ads Here</h2>
+  <div class="card" ng-repeat="card in cards" ng-if="$odd"> <img src="{{card.img}}" alt="Avatar">
+    <div class="card-container">
+      <h4><b>Add</b></h4>
+      <p>{{card.description}}</p>
+    </div>
+  </div>
+</section>

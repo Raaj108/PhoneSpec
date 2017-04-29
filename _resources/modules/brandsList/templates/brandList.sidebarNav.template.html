@@ -1,0 +1,40 @@
+<section id="sideBar-nav">
+  <ul class="nav nav-stacked">
+    <li>
+      <table class="table table-hover table-bordered table-collapsible">
+        <thead>
+          <tr>
+            <th>
+              Popular Phones
+            </th>
+          </tr>
+        </thead>
+        <tbody id="popularPhones">
+          <tr ng-repeat="popularPhone in popularPhones">
+            <td>
+              <a href="#/brand/{{popularPhone.brandName}}/phone/{{popularPhone.phoneName}}">{{popularPhone.phoneName}}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li>
+      <table class="table table-hover table-bordered table-collapsible">
+        <thead>
+          <tr>
+            <th>
+              Popular Brands
+            </th>
+          </tr>
+        </thead>
+        <tbody id="popularBrands">
+          <tr ng-repeat="popularBrand in popularBrands">
+            <td>
+              <a href="#/brand/{{popularBrand}}/phone">{{popularBrand}}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+  </ul>
+</section>

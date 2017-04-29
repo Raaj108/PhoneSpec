@@ -8,6 +8,10 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
 
       $scope.imageSwap($scope.phone.images[0]);
     });**/
+  
+  $scope.images = ['samsung-gem.0', 'samsung-gem.1', 'samsung-gem.2' , 'samsung-mesmerize-a-galaxy-s-phone.1', 'samsung-mesmerize-a-galaxy-s-phone.2', 'samsung-mesmerize-a-galaxy-s-phone.3']
+  
+  
   $scope.imageSwap = function (imageURL) {
     $scope.carouselImage = imageURL;
   }
