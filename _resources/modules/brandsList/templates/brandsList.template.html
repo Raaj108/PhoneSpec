@@ -1,27 +1,22 @@
 <div class="wrapper row" id="brandList-wrapper">
-  <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
-  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" id="brand-list">
-    <h1 class="">All Mobile Phone Brands</h1>
-    <div class="row">
-      <div id="tools" class="form-group col-md-6">
-        <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand">
-      </div>
+    <ng-include src="'_resources/templates/_partial_carousel.html'"></ng-include>
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9" id="brand-list">
+        <h1 class="">All Mobile Phone Brands</h1>
+        <div class="row">
+            <div id="tools" class="form-group col-md-6">
+                <input type="text" ng-model="search.brand.brandName" class="form-control" placeholder="Search Phone Brand"> </div>
+        </div>
+        <div ng-repeat="brand in brands | filter:search.brand:strict" ng-class="{'row':($index+1) % 4 == 0}">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 brand-list text-center">
+                <a href="#/brand/{{brand.brandName}}/phone"> <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.png" alt="{{brands.brandName}}" class="brand-images">
+                    <p class> <b>{{brand.brandName}}</b></p>
+                </a>
+            </div>
+        </div>
     </div>
-
-    <div ng-repeat="brand in brands | filter:search.brand:strict" ng-class="{'row':($index+1) % 4 == 0}">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 brand-list text-center">
-        <a href="#/brand/{{brand.brandName}}/phone">
-          <img src="/_resources/images/brands/{{brand.brandName|lowercase}}.png" alt="{{brands.brandName}}" class="brand-images">
-          <p class> <b>{{brand.brandName}}</b></p>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="blog-list">
-    <ng-include src="'_resources/modules/brandsList/templates/brandList.sidebarNav.template.html'"></ng-include>
-    <ng-include src="'_resources/modules/brandsList/templates/brandList.ads.template.html'"></ng-include>
-    <ng-include src="'_resources/templates/_partial_displayReviews.html'"></ng-include>
-
-  </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="blog-list">
+        <ng-include src="'_resources/modules/brandsList/templates/brandList.sidebarNav.template.html'"></ng-include>
+        <ng-include src="'_resources/modules/brandsList/templates/brandList.ads.template.html'"></ng-include>
+        <ng-include src="'_resources/templates/_partial_displayReviews.html'"></ng-include>
+    </div>   
 </div>

@@ -2,70 +2,68 @@
 <html lang="en" ng-app="phoneSpecApp">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Phone Specification Application</title>
-
-  <!-- Defines JS necessary for bootstrap -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
-  <!-- include Application css -->
-  <link rel="stylesheet" href="_resources/css/phonespec.css">
-  <!-- include brandsList css -->
-  <link rel="stylesheet" href="_resources/modules/brandsList/brands-list.css">
-  <!-- include phoneList css -->
-  <link rel="stylesheet" href="_resources/modules/phoneList/phone-list.css">
-  <!-- include phoneDetails css -->
-  <link rel="stylesheet" href="_resources/modules/phoneDetails/phone-details.css">
-  <!-- Defines CSS necessary for animations -->
-  <link rel="stylesheet" href="_resources/css/app.animations.css">
-  <!-- jQuery 3.1.1 -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <!-- Defines JS necessary for bootstrap -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <!-- Defines JS necessary for Angular app -->
-  <script src="bower_components/angular/angular.js"></script>
-  <!-- Adds routes support in AngularJS -->
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <!-- Adds angular filters -->
-  <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
-  <!-- Adds animation support in AngularJS -->
-  <script src="bower_components/bootstrap/js/carousel.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.js"></script>
-  <!--include Application module-->
-  <script src="_resources/app.js"></script>
-  <script src="_resources/app.config.js"></script>
-  <script src="_resources/app.animations.js"></script>
-  <!--include checkmark filter-->
-  <script src="_resources/checkmark.filter.js"></script>
-  <!--include phoneList module-->
-  <script src="_resources/modules/brandsList/brandsList.module.js"></script>
-  <script src="_resources/modules/brandsList/brandsList.factory.js"></script>
-  <script src="_resources/modules/brandsList/brandsList.directive.js"></script>
-  <script src="_resources/modules/brandsList/brandsList.controller.js"></script>
-  <script src="_resources/reorder.js"></script>
-  <!--include phoneList module-->
-  <script src="_resources/modules/phoneList/phone-list.module.js"></script>
-  <script src="_resources/modules/phoneList/phone-list.factory.js"></script>
-  <script src="_resources/modules/phoneList/phone-list.directives.js"></script>
-  <script src="_resources/modules/phoneList/phone-list.controller.js"></script>
-  <!--include phoneDetails module-->
-  <script src="_resources/modules/phoneDetails/phone-details.module.js"></script>
-  <script src="_resources/modules/phoneDetails/phone-details.factory.js"></script>
-  <script src="_resources/modules/phoneDetails/phoneDetails.addspace.filter.js"></script>
-  <script src="_resources/modules/phoneDetails/phone-details.directive.js"></script>
-  <script src="_resources/modules/phoneDetails/phone-details.controller.js"></script>
-
-  <!-- Defines JavaScript animations -->
-  <script src="_resources/app.animations.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phone Specification Application</title>
+    <!-- Defines JS necessary for bootstrap -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+    <!-- include Application css -->
+    <link rel="stylesheet" href="_resources/css/phonespec.css">
+    <!-- include brandsList css -->
+    <link rel="stylesheet" href="_resources/modules/brandsList/brands-list.css">
+    <!-- include phoneList css -->
+    <link rel="stylesheet" href="_resources/modules/phoneList/phone-list.css">
+    <!-- include phoneDetails css -->
+    <link rel="stylesheet" href="_resources/modules/phoneDetails/phone-details.css">
+    <!-- Defines CSS necessary for animations -->
+    <link rel="stylesheet" href="_resources/css/app.animations.css">
+    <!-- jQuery 3.1.1 -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- Defines JS necessary for bootstrap -->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Defines JS necessary for Angular app -->
+    <script src="bower_components/angular/angular.js"></script>
+    <!-- Adds routes support in AngularJS -->
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- Adds angular filters -->
+    <script src="bower_components/angular-filter/dist/angular-filter.js"></script>
+    <!-- Adds animation support in AngularJS -->
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <!--include Application module-->
+    <script src="_resources/app.js"></script>
+    <script src="_resources/app.config.js"></script>
+    <script src="_resources/app.animations.js"></script>
+    <!--include checkmark filter-->
+    <script src="_resources/checkmark.filter.js"></script>
+    <!--include phoneList module-->
+    <script src="_resources/modules/brandsList/brandsList.module.js"></script>
+    <script src="_resources/modules/brandsList/brandsList.factory.js"></script>
+    <script src="_resources/modules/brandsList/brandsList.directive.js"></script>
+    <script src="_resources/modules/brandsList/brandsList.controller.js"></script>
+    <!--include phoneList module-->
+    <script src="_resources/modules/phoneList/phone-list.module.js"></script>
+    <script src="_resources/modules/phoneList/phone-list.factory.js"></script>
+    <script src="_resources/modules/phoneList/phone-list.directives.js"></script>
+    <script src="_resources/modules/phoneList/phone-list.controller.js"></script>
+    <!--include phoneDetails module-->
+    <script src="_resources/modules/phoneDetails/phone-details.module.js"></script>
+    <script src="_resources/modules/phoneDetails/phone-details.factory.js"></script>
+    <script src="_resources/modules/phoneDetails/phoneDetails.addspace.filter.js"></script>
+    <script src="_resources/modules/phoneDetails/phone-details.directive.js"></script>
+    <script src="_resources/modules/phoneDetails/phone-details.controller.js"></script>
+    <!-- Defines JavaScript animations -->
+    <script src="_resources/app.animations.js"></script>
 </head>
 
 <body>
-  <ng-include src="'_resources/templates/_partial_navigation.html'"></ng-include>
-  <div class="container .view-container">
-    <div ng-view class=".view-frame"></div>
-  </div>
-  <ng-include src="'_resources/templates/_partial_footer.html'"></ng-include>
+    <ng-include src="'_resources/templates/_partial_navigation.html'"></ng-include>
+    <div class="container .view-container">
+        <div ng-view class=".view-frame"></div>
+    </div>
+    <ng-include src="'_resources/templates/_partial_footer.html'"></ng-include>
 </body>
+
 </html>
