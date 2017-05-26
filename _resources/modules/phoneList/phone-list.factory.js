@@ -21,7 +21,7 @@ angular.module('phoneList')
       }).then(function successCallback(response) {
         deferred.resolve(response);
       }, function (response) {
-        deferred.reject('There was an error');
+        deferred.reject(response);
       })
       return deferred.promise;
     }

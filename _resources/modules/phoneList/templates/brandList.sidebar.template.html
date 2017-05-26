@@ -1,0 +1,15 @@
+<section id="selectBrand">
+  <ul class="list-group">
+    <li class="sidebar-header-1 text-center">
+      Select Another Brand
+    </li>
+    <li ng-repeat="brand in brands|limitTo:21" class="select-brand-side-list" ng-class="{'row':($index+1) % 3 == 0}">
+      <div class="col-md-4 col-sm-4"> <a href="#/brand/{{brand.brandName}}/phone">
+            {{brand.brandName}}
+          </a></div>
+    </li>
+    <li class="sidebar-footer-1 text-center">
+      <a href="#/brand">All Brands</a>
+    </li>
+  </ul>
+</section>
