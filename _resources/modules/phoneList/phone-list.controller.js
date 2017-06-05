@@ -18,12 +18,11 @@ angular.module('phoneList').controller('PhoneListController', ['$scope', '$log',
       }, function errorCallback(response) {
         $log.error(response);
       });
-
   }
   $scope.getAllBrands();
 
   //get all the phones of a particular brands using restful api
-  $scope.getPhoneWithBrand = function (brand) {
+  $scope.getAllPhoneWithBrand = function (brand) {
     phoneListfactory.getPhonesWithBrand(brand)
       .then(function successCallback(response) {
         angular.forEach(response.data, function (value, key) {
@@ -33,6 +32,6 @@ angular.module('phoneList').controller('PhoneListController', ['$scope', '$log',
         $log.error(response);
       });
   }
-  $scope.getPhoneWithBrand(brandName);
+  $scope.getAllPhoneWithBrand(brandName);
 }]);
 
