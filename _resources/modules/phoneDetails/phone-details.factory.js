@@ -2,7 +2,7 @@ angular.module('phoneDetails')
   .factory('phoneDetailsfactory', ['$http', '$q', function ($http, $q) {
 
     var service = {};
-    var baseUrl = 'http://phonespec-api.herokuapp.com/api/brand/'
+    var baseUrl = 'http://localhost:4000/api/brand/'
     var _brand;
     var _phone;
     var _url;

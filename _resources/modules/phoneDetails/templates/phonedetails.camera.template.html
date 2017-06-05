@@ -1,33 +1,25 @@
 <section class="display">
-  <div class="spec-heading">
-    <h3>Camera</h3>
-  </div>
-  <div class="spec-body">
-    <table class="table table-bordered table-striped table-hover">
-      <tr ng-repeat="(key, value) in phone.data.camera" ng-class="'{{key}}' == '_id' ? 'hide' : ''">
-        <td class="col-lg-1 col-md-1 col-sm-1 spec-label"> {{key | addspace}} </td>
-        <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_array(value) == false"> {{value}} </td>
-        <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_array(value)" >
-          <ul class="no-space-1">
-            <li><span ng-repeat="(key2, value2) in value" ng-if="is_object(value2) == false">{{value2}} {{$last ? '' : ', '}} </span></li>
-            <li ng-repeat="(key2, value2) in value" ng-if="is_object(value2)">
-              <table class="table table-striped table-hover">
-                <tr ng-repeat="(key3, value3) in value2">
-                  <td class="col-lg-1 col-md-1 col-sm-1 spec-label">{{key3 | addspace}}</td>
-                  <td class="col-lg-1 col-md-1 col-sm-1" ng-if="is_array(value3) == false">{{value3}}</td>
-                  <td class="col-lg-1 col-md-1 col-sm-1" ng-if="is_array(value3)">
+    <div class="spec-heading">
+        <h3>Camera</h3> </div>
+    <div class="spec-body">
+        <table class="table table-bordered table-striped table-hover">
+            <tr ng-repeat="(key, value) in phone.data.camera" ng-class="'{{key}}' == '_id' ? 'hide' : ''">
+                <td class="col-lg-1 col-md-1 col-sm-1 spec-label"> {{key | addspace}} </td>
+                <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_object(value) == false && is_array(value) == false"> {{value}} </td>
+                <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_array(value)">
                     <ul class="no-space-1">
-                      <li><span ng-repeat="(key4, value4) in value3">
-                     {{value4}}{{$last ? '' : ', '}}
-                       </span></li>
+                        <li> <span ng-repeat="(key2, value2) in value">{{value2}}{{$last ? '' : ', '}}</span> </li>
                     </ul>
-                  </td>
-                </tr>
-              </table>
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-  </div>
+                </td>
+                <td class="col-lg-3 col-md-3 col-sm-3" ng-if="is_object(value) && is_array(value) == false">
+                    <table class="table table-bordered table-striped table-hover no-space-1">
+                        <tr ng-repeat="(key2, value2) in value">
+                            <td class="col-lg-1 col-md-1 col-sm-1 spec-label"> {{key2 | addspace}} </td>
+                            <td class="col-lg-3 col-md-3 col-sm-3"> {{value2}} </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 </section>

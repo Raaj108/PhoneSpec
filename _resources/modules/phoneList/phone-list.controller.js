@@ -27,7 +27,7 @@ angular.module('phoneList').controller('PhoneListController', ['$scope', '$log',
     phoneListfactory.getPhonesWithBrand(brand)
       .then(function successCallback(response) {
         angular.forEach(response.data, function (value, key) {
-          $scope.phones.push(value.phoneName); // populate phones array
+          $scope.phones.push(value); // populate phones array
         })
       }, function errorCallback(response) {
         $log.error(response);
