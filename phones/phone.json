@@ -1,0 +1,169 @@
+[
+  {
+    "_id": "591145edf57ead208c36308e",
+    "basicInfo": {
+      "phoneName": "Moto G5 Plus",
+      "brandName": "Motorola",
+      "releaseDate": "Oct 23 2016",
+      "additionalFeatures": [
+        "Turning on the camera with a twist of your wrist",
+        "Fingerprint reader",
+        "TurboPower™ charging",
+        "Water Repellent Nano-Coating"
+      ],
+      "_id": "591145edf57ead208c363097",
+      "features": []
+    },
+    "design": {
+      "operatingSystem": "Android™ 7.0, Nougat",
+      "deviceType": "Smart Phone",
+      "dimension": "150.2 x 74.0 x 9.7 mm",
+      "weight": "155 g",
+      "additionalFeatures": [],
+      "_id": "591145edf57ead208c363096",
+      "colors": [
+        "Lunar Gray",
+        "Fine Gold"
+      ],
+      "materials": [
+        "High-grade Aluminium"
+      ]
+    },
+    "display": {
+      "size": "5.2 in",
+      "pixelDensity": "424 ppi",
+      "technology": "Corning™ Gorilla™ Glass 3",
+      "_id": "591145edf57ead208c363095",
+      "features": [
+        "Full HD 1080p"
+      ],
+      "resolution": [
+        "1920 x 1080"
+      ]
+    },
+    "camera": {
+      "megaPixel": "12 MP",
+      "sensorSize": "Na",
+      "zoom": "8X for photos, 4X for video",
+      "typeOfZoom": "Digital Zoom",
+      "frontCamera": {
+        "megaPixel": "5 MP",
+        "aperture": "ƒ/2.2",
+        "features": "Wide-angle lens, Display flash, Professional mode, Beautification mode",
+        "sensorSize": "Na"
+      },
+      "settings": [],
+      "_id": "591145edf57ead208c363094",
+      "videoRecording": [
+        "4K Ultra HD video capture (30 fps)",
+        "Video Stabilization"
+      ],
+      "features": [
+        "Dual Autofocus Pixels",
+        "Colour balancing dual LED flash",
+        "Drag to focus & exposure",
+        "Quick Capture",
+        "Tap to capture"
+      ],
+      "modes": [
+        "Professional Mode",
+        "Burst mode",
+        "Auto HDR",
+        "Panorama",
+        "Slow Motion Video"
+      ]
+    },
+    "battery": {
+      "capacity": "3000 mAh",
+      "talktime": "16 Hours",
+      "standBy": "16 Hours",
+      "internetUse": "16 Hours",
+      "playBack": [
+        "16 Hours"
+      ],
+      "wirelessCharging": true,
+      "_id": "591145edf57ead208c363093"
+    },
+    "hardware": {
+      "chipset": "Qualcomm® Snapdragon™ 625 processor",
+      "processor": "2.0 GHz Octa-Core CPU",
+      "graphicsProcessor": "650 MHz Adreno 506 GPU",
+      "ram": "3 GB",
+      "storageexpansion": [
+        "128 GB",
+        "microSD Card"
+      ],
+      "internalstorage": [
+        "32 GB"
+      ],
+      "_id": "591145edf57ead208c363092",
+      "sensors": [
+        "Fingerprint reader",
+        "Accelerometer",
+        "Gyroscope",
+        "Ambient Light",
+        "Proximity"
+      ],
+      "storageExpansion": [],
+      "internalStorage": []
+    },
+    "sound": {
+      "speaker": "Dual Speakers with 3D surround Sound",
+      "microphone": "3.5mm",
+      "headsetJack": "3.5mm",
+      "soundType": [
+        {
+          "quality": "Ultra High Quality Audio Playback"
+      },
+        {
+          "audioFormat": ["MP3", "M4A", "3GA", "AAC", "OGG", "OGA", "WAV", "WMA", "AMR", "AWB", "FLAC", "MID", "MIDI", "XMF", "MXMF", "IMY", "RTTTL", "RTX", "OTA", "DSF", "DFF"]
+  		},
+        {
+          "audioFeatures": ["Dual Audio: connect two Bluetooth devices to the Galaxy S8 or S8+ to play audio through the two devices simultaneously", "Scalable Codec: Bluetooth connection is stable even with ambient radio frequency interferences"]
+  		},
+        {
+          "recording": "Recording quality is improved with the High AOP Mic that minimizes distortion in noisy environments"
+  		}
+  	]
+
+    },
+    "connectivity": {
+      "bluetooth": "Bluetooth version 4.2",
+      "usb": "Micro USB",
+      "wifi": [
+        "802.11 a/b/g/n (2.4 GHz + 5 GHz)"
+      ],
+      "payment": "Na",
+      "other": [
+        "NFC"
+      ],
+      "gps": [
+        "GPS, A-GPS, GLONASS"
+      ],
+      "_id": "591145edf57ead208c363090",
+      "locationServices": []
+    },
+    "network": {
+      "sim": "Nano-SIM,Single SIM",
+      "lteTTD": [],
+      "lteFDD": [],
+      "data": [
+        "Na"
+      ],
+      "_id": "591145edf57ead208c36308f",
+      "others": [],
+      "umts": [
+        "UMTS/HSPA+ (850",
+        "900",
+        "1900",
+        "2100 MHz)"
+      ],
+      "lte": [],
+      "gsm": [
+        "GSM/GPRS/EDGE (850, 900, 1800, 1900 MHz)"
+      ],
+      "cdma": []
+    },
+    "__v": 0
+  }
+]

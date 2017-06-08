@@ -51,6 +51,35 @@ img.sliderImage:hover {
   margin: 0 !important;
 }
 
+
+/*Comments Section*/
+
+div.comments-wrapper {
+  padding: 3px;
+  font-size: 13px;
+}
+
+div.comment-display-box {
+  margin: 10px auto;
+  box-shadow: 1px 1px 2px 2px rgba(100, 100, 100, 0.4);
+  padding: 5px;
+}
+
+.user-profile-image-wrapper {
+  margin: 0 auto;
+  width: 50px;
+}
+
+img.user-profile-image {
+  width: 100%;
+}
+
+.comment-timestamp {
+  font-size: 9px;
+  color: rgba(100, 100, 100, 0.4);
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 480px) {
   img.sliderImage {
     width: 40px;

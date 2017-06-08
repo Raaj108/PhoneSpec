@@ -1,0 +1,25 @@
+<div class="comments-wrapper">
+  <div class="comments-heading">
+    <h4>Comments <small> {{totalComments}}</small></h4>
+  </div>
+  <div class="comment-display-box" ng-repeat="comment in comments">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-2">
+        <div class="user-profile-image-wrapper">
+          <img class="user-profile-image" src="/_resources/images/users/{{comment.userName | lowercase}}.jpg" alt="{{comment.userName}}">
+        </div>
+      </div>
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        <div class="user-name">
+          <b>{{comment.userName}}</b>
+        </div>
+        <div class="comments">
+          {{comment.comment}}
+        </div>
+        <div class="comment-timestamp">
+          {{comment.timeStamp}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

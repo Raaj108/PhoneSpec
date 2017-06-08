@@ -36,9 +36,9 @@ angular.module('brandsList').controller('brandsListController', ['$scope', '$htt
   }];
   $scope.popularBrands = ['Samsung', 'Apple', 'Oppo', 'Xiaomi', 'Motorola', 'LG', 'Oneplus', 'Gionee', 'Sony'];
 
-  angular.forEach($scope.cards, function (value, key) {
+ /* angular.forEach($scope.cards, function (value, key) {
     $log.info(key);
-  });
+  });*/
 
   //carousel
   setTimeout(function () {
