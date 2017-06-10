@@ -2,7 +2,7 @@
   <div class="comments-heading">
     <h4>Comments <small> {{totalComments}}</small></h4>
   </div>
-  <div class="comment-display-box" ng-repeat="comment in comments">
+  <div class="comment-display-box" ng-repeat="comment in comments | reverse | limitTo: shrinkVal">
     <div class="row">
       <div class="col-lg-2 col-md-2 col-sm-2">
         <div class="user-profile-image-wrapper">
@@ -17,9 +17,26 @@
           {{comment.comment}}
         </div>
         <div class="comment-timestamp">
-          {{comment.timeStamp}}
+          {{comment.timeStamp | date:'medium'}}
+        </div>
+        <a ng-show="hideReplies" ng-click="hideReplies=false">Reply</a>
+        <a ng-hide="hideReplies" ng-click="hideReplies=true">Hide replies</a>
+        <div class="comment-replies" ng-hide="hideReplies">
+          <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.replies.template.html'"></ng-include>
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12" class="show-more-less">
+    <a ng-hide="totalComments <= 4 || shrinkVal > 4" ng-click="shrinkVal=100">Show more...</a>
+    <a ng-show="shrinkVal > 4" ng-click="shrinkVal=4">Show less...</a>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+    <form name="commentsForm" class="form-inline" ng-submit="addComment()">
+      <div class="form-group write-comment-wrapper">
+        <textarea class="form-control" id="writeComment" ng-model="formData.comment" placeholder="Write a comment..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+    </form>
   </div>
 </div>

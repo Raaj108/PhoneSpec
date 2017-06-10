@@ -27,7 +27,7 @@ table.imageSlider td {
 .spec-body {
   font-family: Verdana, sans-serif;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.5 !important;
 }
 
 img.sliderImage {
@@ -74,9 +74,38 @@ img.user-profile-image {
   width: 100%;
 }
 
-.comment-timestamp {
+.comment-timestamp,
+.reply-timestamp {
   font-size: 9px;
   color: rgba(100, 100, 100, 0.4);
+  margin-top: 10px;
+  width: 30%;
+  display: -webkit-inline-box;
+  display: -webkit-moz-box;
+  display: -webkit-ms-box;
+}
+
+.write-comment-wrapper {
+  width: 85%;
+}
+
+#writeComment {
+  width: 100%;
+  max-width: 509px;
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+.comments,
+.replies {
+  font-size: 12px;
+}
+
+div.reply-display-box {
+  margin: 10px 0;
+}
+
+.write-reply-wrapper {
   margin-top: 10px;
 }
 
@@ -87,5 +116,27 @@ img.user-profile-image {
   table.imageSlider {
     width: 80%;
     margin: 5px auto;
+  }
+  .spec-body {
+    font-size: 12px;
+  }
+  .spec-holder,
+  .comments-wrapper {
+    margin-left: -15px !important;
+    width: 110%;
+  }
+  .write-comment-wrapper {
+    width: 100%;
+  }
+  #writeComment {
+    max-height: 50px;
+  }
+  .comments,
+  .replies {
+    font-size: 11px;
+  }
+  .comment-timestamp,
+  .reply-timestamp {
+    width: 55%;
   }
 }
