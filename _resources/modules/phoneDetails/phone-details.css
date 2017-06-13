@@ -9,6 +9,43 @@
   color: white;
 }
 
+.spec-label {
+  font-weight: 500 !important;
+}
+
+.spec-body {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5 !important;
+}
+
+
+/*Section which displays phone image and general information*/
+
+.spec-header-image {
+  background: none repeat scroll 0 0 #fff;
+  padding: 2px;
+  min-width: 140px;
+  min-height: 185px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.spec-generalinfo {
+  padding: 0px !important;
+}
+
+ul.spec-generalinfo-list {
+  width: 100%;
+  padding: 0px;
+}
+
+ul.spec-generalinfo-list li {
+  width: 45%;
+  /*  border-right: 1px solid rgba(17, 0, 13, 0.3);*/
+  display: inline-block;
+}
+
 table.imageSlider {
   width: 40%;
   margin: 0 auto;
@@ -18,16 +55,6 @@ table.imageSlider {
 table.imageSlider th,
 table.imageSlider td {
   border: 1px !important;
-}
-
-.spec-label {
-  font-weight: 500 !important;
-}
-
-.spec-body {
-  font-family: Verdana, sans-serif;
-  font-size: 14px;
-  line-height: 1.5 !important;
 }
 
 img.sliderImage {
@@ -110,6 +137,12 @@ div.reply-display-box {
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 20px;
+  }
   img.sliderImage {
     width: 40px;
   }
@@ -117,14 +150,20 @@ div.reply-display-box {
     width: 80%;
     margin: 5px auto;
   }
+  .main-spec {
+    padding: 0px;
+  }
+  .spec-header-image-holder {
+    padding: 0px;
+  }
   .spec-body {
     font-size: 12px;
   }
-  .spec-holder,
+  /*.spec-holder,
   .comments-wrapper {
     margin-left: -15px !important;
     width: 110%;
-  }
+  }*/
   .write-comment-wrapper {
     width: 100%;
   }

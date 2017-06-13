@@ -72,7 +72,7 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
     phoneDetailsfactory.getPhone(brand, phone).
     then(function successCallback(response) {
       $scope.phone.data = response.data[0];
-      //$log.info($scope.phone.data);
+      $log.info($scope.phone.data);
     }, function errorCallback(response) {
       $log.error(response);
     });

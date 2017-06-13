@@ -1,23 +1,38 @@
 <div class="wrapper">
-  <div class="col-md-2 col-sm-2 ">
-    <section id="whatsNew">
-      <h2 class="text-center">What's New</h2>
-      <!--<div class="card" ng-repeat="card in cards"> <img src="{{card.img}}" alt="Avatar">
-        <div class="card-container">
-          <h4><b>{{card.name}}</b></h4>
-          <p>{{card.description}}</p>
-        </div>
-      </div>-->
-    </section>
-  </div>
 
-  <div class="col-md-7 col-sm-7 col-sm-12 col-xs-12 ">
-    <!--carousel-->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active"> <img src="/_resources/images/phones/{{phone.data.basicInfo.brandName | lowercase}}/1.jpg" alt="{{phone.data.basicInfo.phoneName}}">
-          <div class="carousel-caption"> </div>
+
+  <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 main-spec ">
+    <!--spec-header-->
+    <div id="spec-header" class="spec-header row">
+      <div class="spec-header-image-holder col-lg-4 col-md-4 col-sm-8 col-xs-8">
+        <img src="/_resources/images/phones/{{phone.data.basicInfo.brandName | lowercase}}/1.jpg" alt="{{phone.data.basicInfo.phoneName}}" class="spec-header-image">
+      </div>
+      <div class="spec-header-generalinfo-holder col-lg-8 col-md-8 col-sm-4 col-xs-4">
+        <div class="spec-generalinfo">
+          <ul class="spec-generalinfo-list">
+            <li>
+              <span class="generalinfo-img"><i class="fa fa-2x fa-mobile"></i></span>
+              <span class="emphasis">{{phone.data.display.size}}</span>
+              <span class="normal"> {{phone.data.display.resolution}}</span>
+            </li>
+            <li>
+              <span class="generalinfo-img"><i class="fa fa-lg fa-camera"></i></span>
+              <span class="emphasis">{{phone.data.camera.megaPixel}}</span>
+              <span class="normal"> {{phone.data.camera.frontCamera.aperture}}</span>
+            </li>
+          </ul>
+          <ul class="spec-generalinfo-list">
+            <li>
+              <span class="generalinfo-img"><i class="fa fa-lg fa-camera"></i></span>
+              <span class="emphasis">{{phone.data.hardware.ram}}</span>
+              <span class="normal"> {{phone.data.hardware.chipset}}</span>
+            </li>
+            <li>
+              <span class="generalinfo-img"><i class="fa fa-lg fa-battery"></i></span>
+              <span class="emphasis">{{phone.data.battery.capacity}}</span>
+              <span class="normal"> {{phone.data.battery.internetUse}}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -33,10 +48,9 @@
           <img class="sliderImage" ng-src="/_resources/images/phones/{{image}}.jpg" ng-click="imageSwap(/_resources/images/phones/{{image}}.jpg)">
         </td>
       </tr>
-    </table>
--->
+    </table>-->
     <!--Phone Heading and desctiption-->
-    <h1>{{phone.data.phoneName}}</h1>
+    <h1>{{phone.data.basicInfo.phoneName}}</h1>
     <!--Phone specifications templates-->
     <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.display.template.html'"></ng-include>
     <hr>
@@ -55,5 +69,12 @@
     <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.network.template.html'"></ng-include>
     <hr>
     <ng-include src="'_resources/modules/phoneDetails/templates/phoneDetails.comments.template.html'"></ng-include>
+  </div>
+
+  <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 ">
+    <section id="whatsNew">
+      <h2 class="text-center">What's New</h2>
+
+    </section>
   </div>
 </div>

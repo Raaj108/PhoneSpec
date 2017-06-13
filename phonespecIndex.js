@@ -2,6 +2,15 @@ var http = require("http");
 var fs = require("fs");
 var path = require("path");
 var mime = require("mime");
+
+mime.define({
+
+  'application/font-woff': ['.woff']
+
+});
+
+mime.lookup('.woff');
+
 //handle the sending of 404 error, which usually appears when requested file doesn't exist
 function send404(response) {
   response.writeHead(404, {

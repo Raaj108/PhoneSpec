@@ -34,6 +34,23 @@ a {
 ul {
   list-style-type: none;
 }
+.emphasis {
+  font: 400 24px Verdana, sans-serif;
+  color: rgba(17, 0, 13, 1.0);
+  padding-top: 13px;
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: -2px;
+}
+.normal {
+  font: 100 15px Verdana, sans-serif;
+  color: rgba(17, 0, 13, 0.7);
+  padding-top: 7px;
+  display: block;
+  width: 100%;
+  position: relative;
+}
 .sidebar-header-1,
 .sidebar-footer-1 {
   background-color: rgba(17, 0, 13, 0.7);
