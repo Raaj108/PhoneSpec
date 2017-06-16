@@ -1,55 +1,79 @@
-.phone-list-item.ng-enter,
-.phone-list-item.ng-leave,
-.phone-list-item.ng-move {
-  transition: 0.5s linear all;
+.ng-hide-add,
+.ng-hide-remove {
+  
 }
 
-.phone-list-item.ng-enter,
-.phone-list-item.ng-move {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
+.ng-hide-add {
+  
 }
 
-.phone-list-item.ng-enter.ng-enter-active,
-.phone-list-item.ng-move.ng-move-active {
-  height: 120px;
-  opacity: 1;
+.ng-hide-add.ng-hide-add-active {}
+
+.ng-hide-remove {}
+
+.ng-hide-remove.ng-hide-remove-active {}
+
+
+/* ANIMATIONS (FROM ANIMATE.CSS) ======================== */
+
+
+/* flip in */
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    transform: perspective(400px);
+    transform: perspective(400px);
+    transform: perspective(400px);
+  }
 }
 
-.phone-list-item.ng-leave {
-  opacity: 1;
-  overflow: hidden;
+
+/* light speed out */
+
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
 }
 
-.phone-list-item.ng-leave.ng-leave-active {
-  height: 0;
-  opacity: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-}
-
-.view-container {
-  position: relative;
-}
-
-.view-frame.ng-enter,
-.view-frame.ng-leave {
-  background: white;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.view-frame.ng-enter {
-  animation: 1s fade-in;
-  z-index: 100;
-}
-
-.view-frame.ng-leave {
-  animation: 1s fade-out;
-  z-index: 99;
+@keyframes lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {

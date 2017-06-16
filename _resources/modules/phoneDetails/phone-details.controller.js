@@ -1,4 +1,4 @@
-angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '$log', '$routeParams', '$http', 'phoneDetailsfactory', function ($scope, $log, $routeParams, $http, phoneDetailsfactory) {
+angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '$interval', '$log', '$routeParams', '$http', 'phoneDetailsfactory', function ($scope, $interval, $log, $routeParams, $http, phoneDetailsfactory) {
   var phoneName = $routeParams.phone;
   var brandName = $routeParams.brand;
   $scope.phone = {};
@@ -7,6 +7,7 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
   $scope.shrinkRepliesVal = 4
   $scope.shrinkVal = 4;
 
+  //dummy comments
   $scope.comments = [
     {
       "phone_id": "58dc3381f7f140329898f93f",
@@ -63,7 +64,7 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
 
       $scope.imageSwap($scope.phone.images[0]);
     });**/
-  $scope.images = ['samsung-gem.0', 'samsung-gem.1', 'samsung-gem.2', 'samsung-mesmerize-a-galaxy-s-phone.1', 'samsung-mesmerize-a-galaxy-s-phone.2', 'samsung-mesmerize-a-galaxy-s-phone.3']
+  $scope.images = ['samsung-gem.0', 'samsung-gem.1', 'samsung-gem.2', 'samsung-mesmerize-a-galaxy-s-phone.1', 'samsung-mesmerize-a-galaxy-s-phone.2', 'samsung-mesmerize-a-galaxy-s-phone.3'];
   /**$scope.imageSwap = function (imageURL) {
     $scope.carouselImage = imageURL;
   }**/
@@ -91,7 +92,6 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
     return isObject;
   }
 
-
   $scope.formData = {
     "phone_id": "591145edf57ead208c36308e",
     userName: "Raajanna",
@@ -110,4 +110,8 @@ angular.module('phoneDetails').controller('PhoneDetailsController', ['$scope', '
       "replies": []
     };
   }
+
+
+
+
 }]);

@@ -41,10 +41,13 @@ ul.spec-generalinfo-list {
 }
 
 ul.spec-generalinfo-list li {
-  width: 45%;
-  /*  border-right: 1px solid rgba(17, 0, 13, 0.3);*/
+  width: 47%;
+  padding-top: 5px;
   display: inline-block;
 }
+
+
+/*Image Slider */
 
 table.imageSlider {
   width: 40%;
@@ -153,17 +156,33 @@ div.reply-display-box {
   .main-spec {
     padding: 0px;
   }
+  /*Section which displays phone image and general information*/
   .spec-header-image-holder {
     padding: 0px;
+    width: 55%;
   }
   .spec-body {
     font-size: 12px;
+  }
+  .spec-header-generalinfo-holder {
+    width: 45%;
+    padding: 0 0 0 5px;
+  }
+  ul.spec-generalinfo-list {
+    margin-bottom: 0px;
+  }
+  ul.spec-generalinfo-list li {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0 3px 10px;
+    margin: 5px 0;
   }
   /*.spec-holder,
   .comments-wrapper {
     margin-left: -15px !important;
     width: 110%;
   }*/
+  /*Comments Section*/
   .write-comment-wrapper {
     width: 100%;
   }

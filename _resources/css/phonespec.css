@@ -69,3 +69,14 @@ ul {
 footer {
   margin-top: 25px;
 }
+@media screen and (max-width: 480px) {
+  .emphasis {
+    font-size: 18px;
+    padding-top: 3px;
+  }
+  
+  .normal {
+    font-size: 13px;
+    padding-top: 3px;
+  }
+}
